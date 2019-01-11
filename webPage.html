@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>首页_凤凰网</title>
+<meta content="凤凰网音乐,爱疯音乐家,看音乐,爱疯音乐榜,凤凰试听,在线听歌,mp3下载" name="keywords" />
+<meta content="凤凰网音乐频道汇集内地、香港、台湾、欧美、日韩等各地音乐资讯，涵盖艺人访谈、发片、演唱会推广营销等众多热门音乐产品和项目，提供正规音乐下载等全新音乐产品服务。“爱疯音乐家”“看音乐”等优质节目独家奉送。" name="description" />
+
+<link type="text/css" rel="stylesheet" href="http://p1.ifengimg.com/a/2018/0726/css/basic_new_v2.css" media="screen"/ >
+<link type="text/css" rel="stylesheet" href="http://y3.ifengimg.com/a/2013/1216/yue1.css" media="screen"/ >
+<script type="text/javascript" src="http://y1.ifengimg.com/BX/min/BX.1.0.1.U.js"></script>
+<script src="http://y1.ifengimg.com/9949a678442334cc/2013/1111/TabControl.1.2.U.js" type="text/javascript"></script>
+<script src="http://y1.ifengimg.com/scripts/min/ifeng_common_v1.js" type="text/javascript"></script>
+<script src="http://y1.ifengimg.com/ent/2012/0411/indexv3.js?=6"  type="text/javascript"></script>
+<script src="http://y0.ifengimg.com/base/jQuery/jquery-1.9.1.min.js"></script>
+<script src="http://y0.ifengimg.com/a/2015/0311/fa.min.js"></script>
+<script>var jq=$.noConflict();</script>
+</head>
+
+<style>
+  /*增加一个属性 排行榜tab*/
+.tit02 {height: 30px;} 
+ 
+/*增加样式*/
+.tit02 span {width: 100px;float: left;height: 34px;}
+.tit02 span.cur {color: #ff7800;border-bottom: 2px solid #ff7800;}
+</style>
+
+<body>
+<link rel="stylesheet" href="http://y0.ifengimg.com/9949a678442334cc/2013/1118/f.header.css" />
+<div class="h_mainNavNew cDGray" id="f-header">
+    <ul class="list_menu">
+        <li style="background:none; padding-left:2px;"><a href="http://www.ifeng.com" target="_blank">首页</a></li>
+        <li><a href="http://news.ifeng.com/" target="_blank">资讯</a></li>
+        <li><a href="http://finance.ifeng.com/" target="_blank">财经</a></li>
+        <li><a href="http://ent.ifeng.com/" target="_blank">娱乐</a></li>
+        <li><a href="http://sports.ifeng.com/" target="_blank">体育</a></li>
+        <li><a href="http://fashion.ifeng.com/" target="_blank">时尚</a></li>
+        <li><a href="http://auto.ifeng.com/" target="_blank">汽车</a></li>
+        <li><a href="http://house.ifeng.com/" target="_blank">房产</a></li>
+        <li><a href="http://tech.ifeng.com/" target="_blank">科技</a></li>
+        <li><a href="http://book.ifeng.com/" target="_blank">读书</a></li>
+       
+        <li><a href="http://culture.ifeng.com/" target="_blank">文化</a></li>
+        <li><a href="http://news.ifeng.com/history/" target="_blank">历史</a></li>
+        <li><a href="http://news.ifeng.com/mil/" target="_blank">军事</a></li>
+        <li><a href="http://imall.ifeng.com/" target="_blank">匠选</a></li>
+        <li><a href="http://cp.ifeng.com/?aid=45" target="_blank">彩票</a></li>
+        <li><a href="http://fo.ifeng.com/" target="_blank">佛教</a></li>
+        <li><a href="http://phtv.ifeng.com/" target="_blank">凤凰卫视</a></li>
+    </ul>
+    <div class="morehNew" id="f-more">
+        <ul>
+            <li>
+                <a href="http://www.ifeng.com/daohang/" target="_blank">更多</a>
+                <ul id="f-more-box">
+                    <li><a href="http://v.ifeng.com/" target="_blank" title="视频">视频</a></li>
+                    <li><a href="http://fashion.ifeng.com/travel/" target="_blank" title="旅游">旅游</a></li>
+                    <li><a href="http://games.ifeng.com/" target="_blank" title="游戏">游戏</a></li>
+                    <li><a href="http://digi.ifeng.com/" target="_blank" title="数码">数码</a></li>
+                    <li><a href="http://fashion.ifeng.com/health/" target="_blank" title="健康">健康</a></li>
+                  
+                    <li><a href="http://home.ifeng.com/" target="_blank" title="家居">家居</a></li>
+                   
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="login" id="f-login-none">
+        <a href="http://my.ifeng.com/?_c=register&_a=new-account" target="_blank">注册</a><a class="f-login" style="cursor:pointer;">登录</a>
+    </div>
+    <div class="login" id="f-login-detail" style="display:none;"></div>
+    <div class="h_indexLogin" id="f-login-box" style="display:none;">
+        <div class="h_close cGray2"><a class="f-login-close" style="cursor:pointer;">关闭</a></div>
+        <div class="clear"></div>
+        <form action="http://my.ifeng.com/?_c=index&_a=login" method="post" id="f-login-form" name="l_f">
+            <ul>
+                <li><label for="f-login-name">账号 </label><input name="uname" type="text" class="h_text" id="f-login-name" /></li>
+                <li><label for="f-login-pass">密码 </label><input name="pass" type="password" class="h_text" id="f-login-pass" /></li>
+                <li><input name="Submit" type="button" class="h_btn04" /></li>
+            </ul>
+            <div class="h_indexReg">没有账号？<br>
+                <a href="http://my.ifeng.com/?_c=register&_a=new-account" target="_blank">立即注册</a>
+            </div>
+            <input type="hidden" name="backurl" id="h_backurl" value="http://sports.ifeng.com/">
+        </form>
+    </div>
+</div>
+<script src="http://m1.ifengimg.com/ifeng/sources/inice_v1.js" ></script>
+<script src="http://y0.ifengimg.com/commonhead/0728/f.header.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<!--start:ipaddel-->
+<div class="col_w1000">
+
+<!--s_yue_index_ad_banner_top_1000x90 2018.09.04 17:28:21-->
+<script type="text/javascript">try{aptracker.add(510);}catch(e){}</script>
+
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/51332160/s_yue_index_ad_banner_01_1000x90', [1000, 90], 'div-gpt-ad-1403248367550-0').addService(googletag.pubads());
+googletag.defineSlot('/51332160/s_yue_index_ad_banner_top_1000x90', [1000, 90], 'div-gpt-ad-1403248367550-1').addService(googletag.pubads());
+googletag.defineSlot('/51332160/s_yue_index_ad_banner_bottom_1000x90', [1000, 90], 'div-gpt-ad-1407410161077-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<script>    
+iis3_config = {
+					"aids" : [
+						{"ap" : "510", "w" : "1000", "h" : "90","res" : "1"}
+					],
+					"mode" : "1"					
+				  };
+</script>
+<script src="https://c0.ifengimg.com/iis/iis_v3_0.js"></script>
+
+<!--/s_yue_index_ad_banner_top_1000x90-->
+
+</div>
+<!--end:ipaddel-->
+
+<style>
+.h_searchDiv{width:1000px;margin:0 auto;height:35px; padding-top:25px;}
+.h_theLogo{float:left;font-size:12px}
+.h_theLogo img{float:left;}
+.h_theLogo .ad00{width:120px; margin-left:30px; float:left;}
+#h_f_logo{width:128px;height:25px;}
+.h_find{ width:300px; float:right;}
+
+.search{ height:26px;}
+.search .lb{ width:78px; height:26px; margin-right:5px; position:relative; float:left;}
+.search .lb ul{ width:78px;}
+.search .lb ul li{ width:76px; height:24px; line-height:24px; border:1px solid #b2b2b2;}
+.search .lb ul li a{ color:#666; display:block; width:66px; height:24px; line-height:24px; background:url(http://y2.ifengimg.com/e01ed39fc2da5d4a/2013/1023/s_bg01_1.gif) no-repeat right top; padding-left:10px;}/*默认背景*/
+.search .lb ul li a:hover{ background:url(http://y2.ifengimg.com/e01ed39fc2da5d4a/2013/1023/s_bg01_2.gif) no-repeat right top; text-decoration:none;}
+.search .lb ul li .a_cl{ background:url(http://y2.ifengimg.com/e01ed39fc2da5d4a/2013/1023/s_bg01_3.gif) no-repeat right top;}
+.search .lb ul li ul{ width:51px; display:none; position:absolute; left:0; background:#fff; border:1px solid #b2b2b2; border-top:none;}
+.search .lb ul li ul li{ width:51px; background:none; border:0; padding-left:0;}
+.search .lb ul li ul li a{ width:42px; background:none; padding-left:9px;}
+.search .lb ul li ul li a:hover{ background:#e7e7e7; background-image:none;}
+.search .t_btn{ width:215px; height:24px; background:url(http://y2.ifengimg.com/e01ed39fc2da5d4a/2013/1023/s_bg02_1.gif) no-repeat right top; border:1px solid #b2b2b2; float:left;}
+.search .t_btn_on{ background:url(http://y2.ifengimg.com/e01ed39fc2da5d4a/2013/1023/s_bg02_2.gif) no-repeat right top;}
+.search .text_bg{ width:178px; height:24px; line-height:24px; overflow:hidden; float:left;}
+.search .text_bg .text01{ color:#666; border:none; background:none; width:158px; padding:0 10px; height:24px; line-height:24px;}
+.search .btn_bg{ width:37px; height:24px; float:left;}
+.search .btn_bg .btn01{ border:none; background:none; width:37px; height:24px; cursor:pointer;}
+
+</style>
+<script src="http://m0.ifengimg.com/keywords.js"></script>
+<div class="h_searchDiv">
+  <div class="h_theLogo">
+     <a href="http://yue.ifeng.com/" target="_blank"><img id="h_f_logo"  src="http://p1.ifengimg.com/a/2017/0925/e02b9e736ce8c3fsize74_w694_h128.png" width="128" height="25" title="凤凰网音乐" alt="凤凰网音乐"></a>
+     <div class="ad00"></div> 
+     <div id="h_adpic"><script src="http://m1.ifengimg.com/sc_ifeng/js/s_news_index_ad_label_pdgm_180x25.js"></script></div>
+  </div>
+
+  <div class="h_find">
+      <div class="search clearfix">
+        <form id="search_form" method="get" action="http://search.ifeng.com/sofeng/search.action" target="_blank" onsubmit="return Tourl();">
+        <div class="lb" id="searchFormOption">
+         <ul class="u_bg" >
+           <li><a id="loginUl" onclick="header_search.show_option()" onmouseout="header_search.out_option()" onmouseover="header_search.over_option()"  style="cursor: default;">站内</a>
+              <ul id="loginFldselectop" onmouseout="header_search.out_option()" onmouseover="header_search.over_option()">
+                <li id="ra1"><a onclick="header_search.select_option('站内')">站内</a></li>
+                <li id="ra2"><a onclick="header_search.select_option('站外')">站外</a></li>
+                <li id="ra3"><a onclick="header_search.select_option('证券')">证券</a></li>
+                <li id="ra4"><a onclick="header_search.select_option('汽车')">汽车</a></li>
+                <li id="ra0"><a onclick="header_search.select_option('视频')">视频</a></li>
+              </ul>
+           </li>
+         </ul>
+        </div>
+        <div class="t_btn clearfix">
+         <div class="text_bg"  id="suggest_list">  
+         <input id="keyword" type="text" name="q" value="" class="text01" autocomplete="off" onclick="header_search.clean_default(this.value)" onblur="header_search.set_default(this.value)" />
+        <input id="param1" type="hidden" name="c" value="1" />
+        <input id="param2" type="hidden" name="" value="" disabled="disabled" />
+        </div>
+         <div class="btn_bg"><input name="" type="submit"  id="btnSearch1" class="btn01" value=""/></div>
+        </div>
+        </form>
+        <script>
+    function Tourl(){
+        var key_v= document.getElementById("loginUl").innerHTML;
+        if(key_v=="视频"){
+            document.forms["search_form"].action = "http://so.v.ifeng.com/video"; 
+        }
+        return true;
+    }
+    </script>
+    <script  src="http://y1.ifengimg.com/e01ed39fc2da5d4a/2013/1026/newSearch.js"></script>
+      </div>      
+  </div>
+ 
+</div>
+<div class="clear"></div>
+  
+<!--导航-->
+
+<div class="col_wbf bg01">
+<div class="col_n1000">
+<div>
+   <div class="col_nav">
+      <ul class="clearfix">
+        <li class="li_ts"><a href="http://yue.ifeng.com/" target="_blank" title="首页">音乐频道</a></li>
+        <li><a href="http://yue.ifeng.com/yuenews.shtml" target="_blank" title="音乐资讯">音乐资讯</a></li>
+           <li><a href="http://yue.ifeng.com/pagelist/21897/1/list.shtml" target="_blank" title="高清图片">高清图片</a></li>
+       <li><a href="http://yue.ifeng.com/yueMV.shtml" target="_blank" title="音乐MV">音乐MV</a></li>
+        <!--<li><a href="http://yue.ifeng.com/mv/list_0/0.shtml" target="_blank" title="音乐MV">音乐MV</a></li>
+        <li><a href="http://yue.ifeng.com/zhuanti/list_0/0.shtml" target="_blank" title="专题">专题</a></li>
+
+
+        <li><a href="http://yue.ifeng.com/tv/" target="_blank" title="爱疯音乐家">爱疯音乐家</a></li>-->
+        <li><a href="http://yue.ifeng.com/yueai.shtml" target="_blank" title="爱疯音乐家">爱疯音乐家</a></li>
+
+
+  
+
+
+<li><a href="http://wm.10086.cn/view/wap/musicindex.do?cType=sst_client&nodeId=7638&cid=014738L&ucid=" target="_blank" title="咪咕音乐app下载">咪咕音乐app下载</a></li>
+
+
+\
+      </ul>
+    </div>
+   
+ </div>
+
+</div>
+</div>
+
+<div class="col clearfix">
+<div class="col_LM">
+<div class="box01">   
+<div id="slide" class="box_focus">
+
+    <div class="photo"   style="display: block;"  >
+        <div class="pic"><a href="http://yue.ifeng.com/a/20180914/39848693_0.shtml" target="_blank">
+            <img src="http://d.ifengimg.com/w660_h368/p3.ifengimg.com/a/2018_37/37e9d3befea4818.jpg" width="660" height="368"  title="李荣浩《张家明和婉君》 纪念出道五周年" /></a>
+        </div>
+        <h4></h4>
+        <div class="text">
+            <a href="http://yue.ifeng.com/a/20180914/39848693_0.shtml" target="_blank">李荣浩《张家明和婉君》 纪念出道五周年</a>
+        </div>
+    </div>
+    <div class="photo"   style="display: none;"  >
+        <div class="pic"><a href="http://yue.ifeng.com/a/20180914/39848689_0.shtml" target="_blank">
+            <img src="http://d.ifengimg.com/w660_h368/p2.ifengimg.com/a/2018_37/e864138e8c35412.png" width="660" height="368"  title="安德烈·波切利张惠妹首度合作碰撞火花" /></a>
+        </div>
+        <h4></h4>
+        <div class="text">
+            <a href="http://yue.ifeng.com/a/20180914/39848689_0.shtml" target="_blank">安德烈·波切利张惠妹首度合作碰撞火花</a>
+        </div>
+    </div>
+    <div class="photo"   style="display: none;"  >
+        <div class="pic"><a href="http://yue.ifeng.com/a/20180914/39848696_0.shtml" target="_blank">
+            <img src="http://d.ifengimg.com/w660_h368/p3.ifengimg.com/a/2018_37/23fdc2d34d0dd42.jpg" width="660" height="368"  title="Mike最新单曲强势来袭 魅力声线再度发声" /></a>
+        </div>
+        <h4></h4>
+        <div class="text">
+            <a href="http://yue.ifeng.com/a/20180914/39848696_0.shtml" target="_blank">Mike最新单曲强势来袭 魅力声线再度发声</a>
+        </div>
+    </div>
+    <div class="photo"   style="display: none;"  >
+        <div class="pic"><a href="http://yue.ifeng.com/a/20180914/39848690_0.shtml" target="_blank">
+            <img src="http://d.ifengimg.com/w660_h368/p3.ifengimg.com/a/2018_37/8165ebeca84f94e.jpg" width="660" height="368"  title="Eason陈奕迅赴台举办新专辑分享会" /></a>
+        </div>
+        <h4></h4>
+        <div class="text">
+            <a href="http://yue.ifeng.com/a/20180914/39848690_0.shtml" target="_blank">Eason陈奕迅赴台举办新专辑分享会</a>
+        </div>
+    </div>
+    <div class="photo"   style="display: none;"  >
+        <div class="pic"><a href="http://yue.ifeng.com/a/20180913/39848685_0.shtml" target="_blank">
+            <img src="http://d.ifengimg.com/w660_h368/p3.ifengimg.com/a/2018_37/cdfff958d0c8dc8.jpg" width="660" height="368"  title="李长庚正式出道 全新EP《VENUS》热力爆棚" /></a>
+        </div>
+        <h4></h4>
+        <div class="text">
+            <a href="http://yue.ifeng.com/a/20180913/39848685_0.shtml" target="_blank">李长庚正式出道 全新EP《VENUS》热力爆棚</a>
+        </div>
+    </div>
+<ul class="btPhoto" id="controlSlide">
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+    </ul>
+    
+ <div class="pre" id="prevSlide">
+    <a>&nbsp;</a>
+    <div class="btnBg01"></div>
+</div>
+<div class="next" id="nextSlide">
+    <a>&nbsp;</a>
+    <div class="btnBg02"></div>
+</div>
+
+<script type="text/javascript" src="http://y0.ifengimg.com/Xcript/ifeng/lazyLoad_0.1.js"></script> 
+ <script type="text/javascript">
+        var loader = new X.lazy();
+        loader.load();//首屏图片初始化
+        loader.play();
+        var tc_sd=new TabControl();
+        tc_sd.addRange($("controlSlide").getElementsByTagName("li"),getElementsByClassName($("slide"),"div","photo"));
+       tc_sd.preButton='prevSlide';
+       tc_sd.nextButton='nextSlide';
+        tc_sd.triggerType = 'mouseover'; 
+        tc_sd.enableSlide=true;
+        tc_sd.slideInterval=3000;
+        tc_sd.autoLoop=true;
+        tc_sd.init();   
+     $("prevSlide").onmouseover=function(){O.setClass(this.getElementsByTagName("div")[0],"btnBg01Hover")};
+      $("nextSlide").onmouseover=function(){O.setClass(this.getElementsByTagName("div")[0],"btnBg02Hover")};
+      $("prevSlide").onmouseout=function(){O.setClass(this.getElementsByTagName("div")[0],"btnBg01")};
+      $("nextSlide").onmouseout=function(){O.setClass(this.getElementsByTagName("div")[0],"btnBg02")};
+
+</script>
+
+</div>
+ 
+
+</div>
+<div class="colLM">
+<div class="col_L">
+<div class="tit04">
+<h3 ><a href="http://yue.ifeng.com/yuenews.shtml" target="_blank" style="color:#000000;">
+   音乐资讯</a></h3>
+</div>
+
+<div class="box05">
+
+
+<div class="neidi"><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180914/39848696_0.shtml" target="_blank "><img src="http://p1.ifengimg.com/cmpp/2018/09/14/10/f71e07a4-0cea-474e-ab66-978bbb7f525b_size137_w333_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180914/39848696_0.shtml" target="_blank ">Mike最新单曲强势来袭 魅力声线再度发</a></h3><div class="Function "><div class="time ">Mike,单曲,Love Battle,浪漫满屋</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180914/39848695_0.shtml" target="_blank "><img src="http://p0.ifengimg.com/cmpp/2018/09/14/10/f5031d98-d96d-44d7-8f59-5f114354fa11_size135_w498_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180914/39848695_0.shtml" target="_blank ">爱梦兄弟组合最新单曲 激励追梦路上的人 </a></h3><div class="Function "><div class="time ">爱梦兄弟,单曲,爱梦永恒</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180914/39848693_0.shtml" target="_blank "><img src="http://p3.ifengimg.com/cmpp/2018/09/14/10/bff30163-906d-4f04-8c82-3dc0114ed8f6_size91_w500_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180914/39848693_0.shtml" target="_blank ">李荣浩《张家明和婉君》 纪念出道五周年</a></h3><div class="Function "><div class="time ">李荣浩,张家明和婉君,首播,出道五周年,电台,专辑</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180914/39848692_0.shtml" target="_blank "><img src="http://p1.ifengimg.com/cmpp/2018/09/14/09/d6011cec-2013-41ef-9a18-2c883a2e370c_size212_w500_h333.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180914/39848692_0.shtml" target="_blank ">王菊出道后首部作品 《哎呀姑妈》分饰两角</a></h3><div class="Function "><div class="time ">王菊,哎呀姑妈,出道,单曲,MV,李茶的姑妈,开心麻花</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180914/39848690_0.shtml" target="_blank "><img src="http://p2.ifengimg.com/cmpp/2018/09/14/09/58673666-7760-4117-aec5-c7a61a3440f6_size255_w500_h332.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180914/39848690_0.shtml" target="_blank ">Eason陈奕迅赴台举办新专辑分享会</a></h3><div class="Function "><div class="time ">Eason,陈奕迅,新专辑分享会,台湾,DUO,L.O.V.E.</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180914/39848689_0.shtml" target="_blank "><img src="http://p1.ifengimg.com/cmpp/2018/09/14/09/30a6ffc6-93c6-49ed-9537-4f7637de7c99_size275_w472_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180914/39848689_0.shtml" target="_blank ">安德烈·波切利张惠妹首度合作碰撞火花</a></h3><div class="Function "><div class="time ">安德烈波切利,aMEI,If Only,美声,张惠妹,新歌</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180913/39848688_0.shtml" target="_blank "><img src="http://p2.ifengimg.com/cmpp/2018/09/13/17/46236095-a26a-4488-8031-7c69d1bbcbd5_size87_w500_h226.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180913/39848688_0.shtml" target="_blank ">第二届中国“网络文学+”大会 “翻阅”与</a></h3><div class="Function "><div class="time ">IP交易峰会,翻阅,网络文学,GNZ48</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180913/39848686_0.shtml" target="_blank "><img src="http://p2.ifengimg.com/cmpp/2018/09/13/15/37ffa40a-96a5-455a-9652-20e6c6b8c98c_size228_w500_h333.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180913/39848686_0.shtml" target="_blank ">欧得洋回乡 为新专辑捕捉灵感</a></h3><div class="Function "><div class="time ">欧得洋,专辑,台湾</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180913/39848685_0.shtml" target="_blank "><img src="http://p2.ifengimg.com/cmpp/2018/09/13/15/602fd2a4-efdd-4c50-8e73-2d2f5606ee32_size228_w500_h333.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180913/39848685_0.shtml" target="_blank ">李长庚正式出道 全新EP《VENUS》热</a></h3><div class="Function "><div class="time ">李长庚,出道,EP,VENUS,发布会,新歌</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180913/39848684_0.shtml" target="_blank "><img src="http://p3.ifengimg.com/cmpp/2018/09/13/13/efa41c63-f873-4664-a724-33c929fb047f_size262_w357_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180913/39848684_0.shtml" target="_blank ">鹿晗巡演深圳站开票 音乐初心从未改变</a></h3><div class="Function "><div class="time ">鹿晗,巡演,深圳,RE：X,演唱会</div></div></div></div>
+
+<div style="display:none;" class="gangtai"><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180914/39848690_0.shtml" target="_blank "><img src="http://p2.ifengimg.com/cmpp/2018/09/14/09/58673666-7760-4117-aec5-c7a61a3440f6_size255_w500_h332.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180914/39848690_0.shtml" target="_blank ">Eason陈奕迅赴台举办新专辑分享会</a></h3><div class="Function "><div class="time ">Eason,陈奕迅,新专辑分享会,台湾,DUO,L.O.V.E.</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180914/39848689_0.shtml" target="_blank "><img src="http://p1.ifengimg.com/cmpp/2018/09/14/09/30a6ffc6-93c6-49ed-9537-4f7637de7c99_size275_w472_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180914/39848689_0.shtml" target="_blank ">安德烈·波切利张惠妹首度合作碰撞火花</a></h3><div class="Function "><div class="time ">安德烈波切利,aMEI,If Only,美声,张惠妹,新歌</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180913/39848686_0.shtml" target="_blank "><img src="http://p2.ifengimg.com/cmpp/2018/09/13/15/37ffa40a-96a5-455a-9652-20e6c6b8c98c_size228_w500_h333.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180913/39848686_0.shtml" target="_blank ">欧得洋回乡 为新专辑捕捉灵感</a></h3><div class="Function "><div class="time ">欧得洋,专辑,台湾</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180912/39848675_0.shtml" target="_blank "><img src="http://p2.ifengimg.com/cmpp/2018/09/12/21/82e1f053-04e2-4452-9bf6-a32d09a29df3_size59_w500_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180912/39848675_0.shtml" target="_blank ">曾咏欣原创生日单曲《愿你幸福到底》发行</a></h3><div class="Function "><div class="time ">曾咏欣,愿你幸福到底,生日,单曲</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180912/39848673_0.shtml" target="_blank "><img src="http://p1.ifengimg.com/cmpp/2018/09/12/16/882d4ccb-18e3-4c14-acff-91a38e607686_size87_w375_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180912/39848673_0.shtml" target="_blank ">吴汶芳巡演 粉丝高唱“吴阿姨”</a></h3><div class="Function "><div class="time ">吴汶芳,巡演,演唱会,美好</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180912/39848667_0.shtml" target="_blank "><img src="http://p3.ifengimg.com/cmpp/2018/09/12/10/37eb30b5-863d-4c4e-ac9d-db4a8f393f3e_size55_w500_h333.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180912/39848667_0.shtml" target="_blank ">张信哲黑胶主打《有情世间》婉转唱情</a></h3><div class="Function "><div class="time ">张信哲,黑胶,主打,有情世间,歌时代</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180911/39848659_0.shtml" target="_blank "><img src="http://p1.ifengimg.com/cmpp/2018/09/11/18/6ed543d6-bed5-40fd-bf71-3b761f7cf36f_size18_w353_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180911/39848659_0.shtml" target="_blank ">S.H.E十七音乐会 咪咕纪录青春进行时</a></h3><div class="Function "><div class="time ">十七,音乐会,演唱会,青春,吴青峰</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180911/39848657_0.shtml" target="_blank "><img src="http://p0.ifengimg.com/cmpp/2018/09/11/17/cddbad36-645f-4676-bfc9-9a98305c96b8_size114_w250_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180911/39848657_0.shtml" target="_blank ">《奇遇人生》发起人阿雅 未知中寻找自我</a></h3><div class="Function "><div class="time ">奇遇人生,发起人,阿雅,寻找自我</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180911/39848653_0.shtml" target="_blank "><img src="http://p2.ifengimg.com/cmpp/2018/09/11/13/dcd8ac98-0e1c-4f74-8cd5-d1b1959a21e3_size84_w500_h280.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180911/39848653_0.shtml" target="_blank ">方大同新歌MV上线 倡导环保意识关爱自然</a></h3><div class="Function "><div class="time ">方大同,The Tree of Life,MV,环保,艾美梦游系列</div></div></div><div class="picTxt01 clearfix" style="width:550px"> <a  href="http://yue.ifeng.com/a/20180911/39848646_0.shtml" target="_blank "><img src="http://p0.ifengimg.com/cmpp/2018/09/11/09/acba9eb2-d82d-47ee-a619-2b5d8e5949a6_size117_w333_h500.jpg" width="90 " height="65 " border="0 " ></a><h3><a href="http://yue.ifeng.com/a/20180911/39848646_0.shtml" target="_blank ">徐佳莹献声《凉生》 用音乐记录最美的遇见</a></h3><div class="Function "><div class="time ">徐佳莹,凉生,最美的遇见,主题曲</div></div></div></div>
+
+
+
+</div>
+</div>
+<div class="col_L" style="width: 230px;margin-left: 30px;">
+<div class="tit04">
+<h3 style="width:200px"><a href="http://yue.ifeng.com/yueai.shtml" target="_blank" style="color:#000000;">
+    爱疯音乐家</a></h3>
+</div> <!--
+ <div class="box02">
+    
+    <div class="box02intr">
+        
+                
+        <div class="picTxt02">
+            <h3><a href="http://v.ifeng.com/201809/video_22743123.shtml" target="_blank">陈梓童：佛系音乐人就是我</a></h3>
+            <a href="http://v.ifeng.com/201809/video_22743123.shtml" target="_blank"><img src="http://d.ifengimg.com/w220_h140/p2.ifengimg.com/a/2018_36/3ecaab887369908.jpg" width="220" height="140" /></a>
+           <p>http://ips.ifeng.com/video19.ifeng.com/video09/2018/09/06/p1759942-102-009-173725.mp4?contentid=22743123<a href="http://v.ifeng.com/201809/video_22743123.shtml" target="_blank">[详细]</a></p>
+        </div>
+        
+       
+       
+        
+       
+       
+        <div class="box02list02">
+            <ul>
+                <li><a href="http://v.ifeng.com/video_21693161.shtml" target="_blank">尚雯婕：有才华的人气场最特别</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_20884675.shtml" target="_blank">旅行团：感悟自己，敢玩音乐</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_19736146.shtml" target="_blank">王一浩：植物系暖男的一号情人</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_18278149.shtml" target="_blank">GNZ48TeamZ小姐姐们大爆料！</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_9859916.shtml" target="_blank">顽童MJ116：为来自木栅骄傲</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_6346649.shtml" target="_blank">梁博：我从写歌的时候就没撒谎</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_4894630.shtml" target="_blank">宫阁：创作好音乐是一生计划</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_4576197.shtml" target="_blank">杨乃文：人都该去面对恐惧的事</a></li>
+        
+       
+       
+                <li><a href="http://yue.ifeng.com/a/20160930/39765422_0.shtml" target="_blank">陈洁仪：不完美的美其实更美</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_3705214.shtml" target="_blank">刘惜君：分享更多内在的自己</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_475800.shtml" target="_blank">华晨宇：台上台下的我都有48面</a></li>
+        
+       
+       
+                <li><a href="http://v.ifeng.com/video_441376.shtml" target="_blank">蔡淳佳：做真实的人很重要</a></li>
+            </ul>
+        </div>
+        
+
+        
+    </div>
+    
+</div>
+-->
+<div class="box02 p_02">
+
+<div class="picTxt03">
+<div class="box02list02">
+<ul>
+
+<h3><a href="http://v.ifeng.com/201809/video_22743123.shtml" target="_blank">陈梓童：佛系音乐人就是我</a></h3>
+<a href="http://v.ifeng.com/201809/video_22743123.shtml" target="_blank"><img src="http://d.ifengimg.com/w220_h140/p2.ifengimg.com/a/2018_36/3ecaab887369908.jpg" width="220" height="140"></a>
+<div style="width: 100%;height: 20px;border-bottom: solid 1px #eeeeee;">
+</div>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_21693161.shtml" target="_blank">尚雯婕：有才华的人气场最特别</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_20884675.shtml" target="_blank">旅行团：感悟自己，敢玩音乐</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_19736146.shtml" target="_blank">王一浩：植物系暖男的一号情人</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_18278149.shtml" target="_blank">GNZ48TeamZ小姐姐们大爆料！</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_9859916.shtml" target="_blank">顽童MJ116：为来自木栅骄傲</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_6346649.shtml" target="_blank">梁博：我从写歌的时候就没撒谎</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_4894630.shtml" target="_blank">宫阁：创作好音乐是一生计划</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_4576197.shtml" target="_blank">杨乃文：人都该去面对恐惧的事</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20160930/39765422_0.shtml" target="_blank">陈洁仪：不完美的美其实更美</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_3705214.shtml" target="_blank">刘惜君：分享更多内在的自己</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_475800.shtml" target="_blank">华晨宇：台上台下的我都有48面</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://v.ifeng.com/video_441376.shtml" target="_blank">蔡淳佳：做真实的人很重要</a></h3> 
+   </li>
+
+ </ul>  
+ </div>     
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+</div>
+<div class="col_R">
+<script>
+jq().ready(
+  function(){
+  jq(".list_01").mouseover(function (){
+	jq(".list_02").hide();
+	jq(".list_01").show();
+	jq(this).hide();
+	jq(this).next().show();
+  } );
+  
+  }
+)
+
+</script>
+<div class="box03 clearfix">
+
+<div class="tit04">
+<h3 ><a href="javascript:void(0)" style="color:#000000;">
+   热歌排行</a></h3>
+</div>
+
+    <ul id='up1' style="display:block">
+   
+            <li>
+       
+            <div class="list_01"   style="display:none;" >
+            <div class="num"> 01   </div>
+            <div class="song"><a target="_blank">有多少爱可以重来</a></div>
+            <div class="name">摩登兄弟刘宇宁</div>
+            </div>
+            <div class="list_02 clearfix"   >
+            <div class="num01">01  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/album/1111861211" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p1.ifengimg.com/a/2018_37/8a3cedda040ba56.png" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/album/1111861211" target="_blank">有多少爱可以重来</a></h3>
+            <p>摩登兄弟刘宇宁</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 02   </div>
+            <div class="song"><a target="_blank">修炼歌</a></div>
+            <div class="name">伍嘉成</div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">02  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/song/1111513698" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2018_37/674f78d371c3206.png" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/song/1111513698" target="_blank">修炼歌</a></h3>
+            <p>伍嘉成</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 03   </div>
+            <div class="song"><a target="_blank">最美的遇见</a></div>
+            <div class="name">徐佳莹</div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">03  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/album/1111806583" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2018_37/fab7eff030a8530.png" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/album/1111806583" target="_blank">最美的遇见</a></h3>
+            <p>徐佳莹</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 04   </div>
+            <div class="song"><a target="_blank">为你 </a></div>
+            <div class="name">马伊琍 姚晨</div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">04  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/album/1111806474" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p2.ifengimg.com/a/2018_37/6cc4c4f0c79f8f9.png" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/album/1111806474" target="_blank">为你 </a></h3>
+            <p>马伊琍 姚晨</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 05   </div>
+            <div class="song"><a target="_blank">许你</a></div>
+            <div class="name">林允</div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">05  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/song/1111456187" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2018_36/678e71c9df313c3.png" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/song/1111456187" target="_blank">许你</a></h3>
+            <p>林允</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 06   </div>
+            <div class="song"><a target="_blank">寒鸦少年</a></div>
+            <div class="name">华晨宇</div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">06  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/song/1111440347" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2018_36/10ce5dee49df1ad.png" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/song/1111440347" target="_blank">寒鸦少年</a></h3>
+            <p>华晨宇</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 07   </div>
+            <div class="song"><a target="_blank">全世界陪我失眠</a></div>
+            <div class="name">汪苏泷</div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">07  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/album/1111612372" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p1.ifengimg.com/a/2018_36/a7681397e33b3b6.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/album/1111612372" target="_blank">全世界陪我失眠</a></h3>
+            <p>汪苏泷</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 08   </div>
+            <div class="song"><a target="_blank">MY KEY</a></div>
+            <div class="name">SNH48 BLUEV</div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">08  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/song/1111806627" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2018_37/330fed8cf71ee07.png" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/song/1111806627" target="_blank">MY KEY</a></h3>
+            <p>SNH48 BLUEV</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 09   </div>
+            <div class="song"><a target="_blank">WHY</a></div>
+            <div class="name">周洁琼</div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">09  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/song/1111563981" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p1.ifengimg.com/a/2018_37/20a44599c6f6e7f.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/song/1111563981" target="_blank">WHY</a></h3>
+            <p>周洁琼</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num">  10  </div>
+            <div class="song"><a target="_blank">心动拍拍</a></div>
+            <div class="name">陈芳语</div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01"> 10 </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/v2/music/song/1111441372" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p0.ifengimg.com/a/2018_36/8246be490fdc6c9.png" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/v2/music/song/1111441372" target="_blank">心动拍拍</a></h3>
+            <p>陈芳语</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+    </ul>
+
+
+</div>
+
+
+<div class="box03  clearfix" style="margin-top: 21px;">
+<div class="tit04">
+<h3 style="width:200px" ><a href="http://yue.ifeng.com/yinlenishizhen/yuensz.shtml" target="_blank"  style="color:#000000;">
+   音乐逆时针</a></h3>
+</div>
+
+<div class="p_02" >
+
+<div class="picTxt03">
+<div class="list02" >
+<ul>
+
+<h3><a href="http://yue.ifeng.com/a/20180912/39848674_0.shtml" target="_blank">NO.9–你知不知道，此刻的寂寞是因为思念谁？</a></h3>
+<a href="http://yue.ifeng.com/a/20180912/39848674_0.shtml" target="_blank"><img src="http://d.ifengimg.com/w220_h140/p0.ifengimg.com/a/2018_37/a30f928fa074558.jpg" width="220" height="140"></a>
+   <div style="width: 100%;height: 20px;border-bottom: solid 1px #eeeeee;">
+</div>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20180905/39848606_0.shtml" target="_blank">NO.8-黄家驹：原谅我这一生不羁放纵爱自由</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20180829/39848551_0.shtml" target="_blank">NO.7-有一个会写歌的男朋友，是一种怎样的体验？</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20180822/39848500_0.shtml" target="_blank">NO.6-生活给予的苦难，他用音乐来还击</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20180815/39848454_0.shtml" target="_blank">NO.5-最好听的寂静之声，最喧哗的默语而谈 </a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20180810/39848406_0.shtml" target="_blank">NO.4-70后80后最爱的歌，竟被180位歌手翻唱过？！</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20180802/39848340_0.shtml" target="_blank">NO.3-迅速解锁桑拿天儿，教你一键开启出海模式</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20180727/39848304_0.shtml" target="_blank">NO.2–周一偏逢连夜雨，如何优雅诠释“不想上班”</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20180726/39848294_0.shtml" target="_blank">NO.1-游吟歌手与梵高的跨时空对话</a></h3> 
+   </li>
+
+  <li>
+   <h3 style="font-weight: normal;"><a href="http://yue.ifeng.com/a/20180803/39848355_0.shtml" target="_blank">张信哲“未来式”巡演启动 北京站预售在即</a></h3> 
+   </li>
+
+ </ul>  
+ </div>     
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="adv01">
+
+<!--s_yue_index_ad_banner_01_1000x90 2018.09.04 17:28:28-->
+<script type="text/javascript">try{aptracker.add(511);}catch(e){}</script>
+
+
+<script>    
+iis3_config = {
+					"aids" : [
+						{"ap" : "511", "w" : "1000", "h" : "90","res" : "1"}
+					],
+					"mode" : "1"					
+				  };
+</script>
+<script src="https://c0.ifengimg.com/iis/iis_v3_0.js"></script>
+<!--/s_yue_index_ad_banner_01_1000x90-->
+
+</div>
+
+
+
+
+<div class="col clearfix colp">
+<div class="col_LM">
+<div id="tabControlArea">
+
+<div class="titwrap">
+<!--
+<ul class="listtab01" id="tab8">
+<li class="current">华语</li>
+<li class="">欧美</li>
+<li class="">日韩</li>
+</ul>
+ -->
+ <div class="tit04">
+<h3 ><a href="http://yue.ifeng.com/yueMV.shtml" target="_blank" style="color:#000000;">
+   音乐MV</a></h3>
+</div>
+
+</div>
+<div class="pictxtwrap02">
+
+<div id="gc01" style="display: block;">
+	<div class="colLM02  clearfix"  style="width:680px">
+		<div class="col_L02">
+		<div class="pic04">
+<div class="Focus04">
+<div class="Focus_pic04">
+     <a target="_blank" href="http://v.ifeng.com/201809/video_23127788.shtml">
+          <img src="http://p2.ifengimg.com/a/2018_37/02c66a0317dcd83.jpg" alt="" width="320" height="320" border="0" title="">
+     </a>
+</div>
+<div class="icon" onClick="window.open('http://v.ifeng.com/201809/video_23127788.shtml')"  ></div>
+<div class="caption04" style="display: none;">
+        <div class="reab04">
+            <div class="backy04"></div>
+            <div class="backy_text04">
+                <a target="_blank" href="http://v.ifeng.com/201809/video_23127788.shtml">苟瀚中 - 可能我还爱你留言版 </a>
+            </div>
+        </div>
+</div>
+
+
+</div>
+
+
+
+<div class="Focus04" style="margin-top:20px;">
+<div class="Focus_pic04">
+     <a target="_blank" href="http://v.ifeng.com/201809/video_23216228.shtml">
+          <img src="http://p0.ifengimg.com/a/2018_37/2c9517b8bcb06fc.jpg" alt="" width="320" height="320" border="0" title="">
+     </a>
+</div>
+<div class="icon" onClick="window.open('http://v.ifeng.com/201809/video_23216228.shtml')"  ></div>
+<div class="caption04" style="display: none;">
+        <div class="reab04">
+            <div class="backy04"></div>
+            <div class="backy_text04">
+                <a target="_blank" href="http://v.ifeng.com/201809/video_23216228.shtml">金池\羽田 - 再见挚爱</a>
+            </div>
+        </div>
+</div>
+
+
+</div>
+</div>
+		</div>
+		<div class="col_R02" style="width:340px">
+		<div class="boxwe04rlist">
+<div class="pic05  p_05 "   style="float:left;width:150px;" >
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://v.ifeng.com/201809/video_22996745.shtml"><img src="http://d.ifengimg.com/w150_h150/p1.ifengimg.com/a/2018_37/165ddf0ef282c85.jpg" width="150" height="150" alt="" title=""></a></div>
+<div class="icon05" onclick="window.open('http://v.ifeng.com/201809/video_22996745.shtml')" ></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://v.ifeng.com/201809/video_22996745.shtml">鹿晗 - RE：X巡演完整版宣传片</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic05 "   style="float:left;width:150px; margin-left:20px; " >
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://v.ifeng.com/201809/video_23035847.shtml"><img src="http://d.ifengimg.com/w150_h150/p3.ifengimg.com/a/2018_37/ecf3db2fc234e91.jpg" width="150" height="150" alt="" title=""></a></div>
+<div class="icon05" onclick="window.open('http://v.ifeng.com/201809/video_23035847.shtml')" ></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://v.ifeng.com/201809/video_23035847.shtml">南征北战NZBZ - 午夜的列车</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic05  p_05 "   style="float:left;width:150px;" >
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://v.ifeng.com/201809/video_23005006.shtml"><img src="http://d.ifengimg.com/w150_h150/p0.ifengimg.com/a/2018_37/7080c381e798c8c.jpg" width="150" height="150" alt="" title=""></a></div>
+<div class="icon05" onclick="window.open('http://v.ifeng.com/201809/video_23005006.shtml')" ></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://v.ifeng.com/201809/video_23005006.shtml">窦佳嫄 - Star</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic05 "   style="float:left;width:150px; margin-left:20px; " >
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://v.ifeng.com/video_22264814.shtml"><img src="http://d.ifengimg.com/w150_h150/p0.ifengimg.com/a/2018_36/3bfeaa84c97798b.jpg" width="150" height="150" alt="" title=""></a></div>
+<div class="icon05" onclick="window.open('http://v.ifeng.com/video_22264814.shtml')" ></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://v.ifeng.com/video_22264814.shtml">习谱予 - 霓虹</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic05  p_05 "   style="float:left;width:150px;" >
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://v.ifeng.com/video_22178731.shtml"><img src="http://d.ifengimg.com/w150_h150/p1.ifengimg.com/a/2018_36/2d5dea5faf1ea3d.jpg" width="150" height="150" alt="" title=""></a></div>
+<div class="icon05" onclick="window.open('http://v.ifeng.com/video_22178731.shtml')" ></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://v.ifeng.com/video_22178731.shtml">火箭少女101 - 撞 </a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic05 "   style="float:left;width:150px; margin-left:20px; " >
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://v.ifeng.com/video_22099665.shtml"><img src="http://d.ifengimg.com/w150_h150/p1.ifengimg.com/a/2018_36/598d2c969a20908.jpg" width="150" height="150" alt="" title=""></a></div>
+<div class="icon05" onclick="window.open('http://v.ifeng.com/video_22099665.shtml')" ></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://v.ifeng.com/video_22099665.shtml">孙八一&张震岳 - 爱就别走</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic05  p_05 "   style="float:left;width:150px;" >
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://v.ifeng.com/video_22105817.shtml"><img src="http://d.ifengimg.com/w150_h150/p1.ifengimg.com/a/2018_35/84e3d433ba9dce6.jpg" width="150" height="150" alt="" title=""></a></div>
+<div class="icon05" onclick="window.open('http://v.ifeng.com/video_22105817.shtml')" ></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://v.ifeng.com/video_22105817.shtml">赵照 - 平遥行</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic05 "   style="float:left;width:150px; margin-left:20px; " >
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://v.ifeng.com/video_21775847.shtml"><img src="http://d.ifengimg.com/w150_h150/p3.ifengimg.com/a/2018_35/228da0b9208d7e8.jpg" width="150" height="150" alt="" title=""></a></div>
+<div class="icon05" onclick="window.open('http://v.ifeng.com/video_21775847.shtml')" ></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://v.ifeng.com/video_21775847.shtml">苏青 - 相忘</a></div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+		</div>
+	</div>
+</div>
+
+
+</div>
+<script type="text/javascript"> 
+	jq(function () {
+		jq('.pic04').find('.icon').hide();
+		jq('.col_R02 .icon05').hide();
+		
+		jq(function () {
+			jq('.pic04').each(function () {
+				var sliders = jq(this).find('.Focus04');
+				sliders.hover(
+
+				function () {
+					var jqthis = jq(this);
+					  jqthis.find('.icon').show();
+					jqthis.find('.caption04').stop(true, true).slideDown(300);
+				}, function () {
+					var jqthis = jq(this);
+			  
+						jqthis.find('.icon').hide();
+					jqthis.find('.caption04').stop(true, true).slideUp(300);
+				});
+			});
+		});
+		
+		jq('.pic05').each(function () {
+			var sliders = jq(this).find('.Focus01');
+			sliders.hover(
+
+			function () {
+				var jqthis = jq(this);
+				 
+				  jqthis.find('.icon05').show();
+				jqthis.find('.caption01').stop(true, true).slideDown(300);
+			}, function () {
+				var jqthis = jq(this);
+		  
+					jqthis.find('.icon05').hide();
+				jqthis.find('.caption01').stop(true, true).slideUp(300);
+			});
+		});
+	});
+		//标签切换
+		var entbest=new TabControl();
+		entbest.addRange($("tab8").getElementsByTagName("li"),['gc01','gc02','gc03']);	
+		entbest.triggerType = 'mouseover'; //鼠标切换方式设置 点击切换：click 鼠标移上去切换: mouseover
+		entbest.defaultPage =0;			//缺省显示第几页
+		entbest.init();
+</script>
+</div>
+</div>
+<div class="col_R">
+
+<div class="tit04">
+<h3 ><a href="javascript:void(0)" style="color:#000000;">
+   演出</a></h3>
+</div>
+
+<div class="box07">
+
+    <div class="list09" style="height:680px">
+        <ul class="listbg" style="background-size: 1px 520px;" >
+                <li class=" curren ">
+        <div class="date01">11月9日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180913/39848684_0.shtml" target="_blank">鹿晗RE：X巡演深圳站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月27日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180529/39847919_0.shtml" target="_blank">莫文蔚“绝色”巡演重庆站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月27日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180710/39848163_0.shtml" target="_blank">鹿先森乐队“华年”巡演广州站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月20日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180910/39848637_0.shtml" target="_blank">鹿晗RE：X巡演郑州站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月19日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180831/39848573_0.shtml" target="_blank">梁晓雪巡演重庆站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月14日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180905/39848598_0.shtml" target="_blank">张信哲“未来式”巡演北京站 加场</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月13日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180803/39848355_0.shtml" target="_blank">张信哲“未来式”巡演北京站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月13日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180815/39848453_0.shtml" target="_blank">鹿晗RE：X巡演杭州站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月13日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180907/39848622_0.shtml" target="_blank">TWINS LOL世界巡回演唱会澳门站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月13日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180910/39848640_0.shtml" target="_blank">潮酷生活节</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月7日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180815/39848450_0.shtml" target="_blank">张韶涵“旅程”巡演合肥站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月7日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180628/39848105_0.shtml" target="_blank">薛之谦“摩天大楼”巡演上海站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月6日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180731/39848323_0.shtml" target="_blank">谢天笑“那不是我”巡演天津站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">10月6日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180726/39848292_0.shtml" target="_blank">鹿晗RE：X巡演北京站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">9月23日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180808/39848392_0.shtml" target="_blank">北京麦田音乐节</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">9月22日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180625/39848061_0.shtml" target="_blank">伍佰“全面对决”巡演厦门站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">9月22日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180724/39848262_0.shtml" target="_blank">许茹芸“绽放的绽放的绽放”巡演上海站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">9月22日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180910/39848642_0.shtml" target="_blank">沧州迷笛音乐季</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">9月16日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180903/39848582_0.shtml" target="_blank">ULTRA CHINA音乐节北京站</a></div>
+        </li>
+        
+        <li class="">
+        <div class="date01">9月15日</div>
+        <div class="listtit01" style="width:220px;"><a href="http://yue.ifeng.com/a/20180809/39848398_0.shtml" target="_blank">潘玮柏“创使者”巡演南京站</a></div>
+        </li>
+        
+       </ul>
+    </div>
+</div>
+
+
+
+</div>
+</div>
+<div class="adv01">
+
+<!--s_yue_index_ad_banner_02_1000x90 2018.09.04 17:28:14-->
+<script type="text/javascript">try{aptracker.add(512);}catch(e){}</script>
+
+
+<script>    
+iis3_config = {
+					"aids" : [
+						{"ap" : "512", "w" : "1000", "h" : "90","res" : "1"}
+					],
+					"mode" : "1"					
+				  };
+</script>
+<script src="https://c0.ifengimg.com/iis/iis_v3_0.js"></script>
+<!--/s_yue_index_ad_banner_02_1000x90-->
+
+</div>
+
+
+
+<div class="col clearfix colp01">
+<div class="tit04">
+<h3 style="width:200px"><a href="http://yue.ifeng.com/pagelist/21897/1/list.shtml" target="_blank" style="color:#000000;">
+   高清图片</a></h3>
+</div>
+
+<div class="picWall clearfix">
+<div class="p_l_box clearfix">
+
+
+
+
+
+<div onMouseOut="out('txt01','txt011')" onMouseMove="over('txt01','txt011')" class="p_l_01 p00a">
+  <a target="_blank" href="http://yue.ifeng.com/a/20180911/39848645_0.shtml#p=1"><img width="198" height="148" alt="吴昕" src="http://p2.ifengimg.com/a/2018_37/5b460df3ecaa989.jpg" /></a>
+  <div id="txt01" class="pwTextbg wid195" style="display: none;"></div>
+  <div id="txt011" class="pwText wid195" style="display: none;"><a target="_blank" href="http://yue.ifeng.com/a/20180911/39848645_0.shtml#p=1">吴昕</a></div>
+</div>
+
+
+
+<div onMouseOut="out('txt02','txt022')" onMouseMove="over('txt02','txt022')" class="p_l_01">
+  <a target="_blank" href="http://yue.ifeng.com/a/20180913/39848681_0.shtml#p=1"><img width="198" height="148" alt="毕雯珺纽约时装周" src="http://p3.ifengimg.com/a/2018_37/0f8c05bcbeac2b4.jpg"/></a>
+  <div id="txt02" class="pwTextbg wid195" style="display: none;"></div>
+  <div id="txt022" class="pwText wid195" style="display: none;"><a target="_blank" href="http://yue.ifeng.com/a/20180913/39848681_0.shtml#p=1">毕雯珺纽约时装周</a></div>
+</div>
+
+
+
+
+
+<div onMouseOut="out('txt03','txt033')" onMouseMove="over('txt03','txt033')" class="p_l_02">
+  <a target="_blank" href="http://yue.ifeng.com/a/20180827/39848524_0.shtml#p=1"><img width="398" height="148" alt="娄艺潇" src="http://p3.ifengimg.com/a/2018_35/29e88ba40ccfada.jpg"/></a>
+  <div id="txt03" class="pwTextbg wid398" style="display: none;"></div>
+  <div id="txt033" class="pwText wid398" style="display: none;"><a target="_blank" href="http://yue.ifeng.com/a/20180827/39848524_0.shtml#p=1">娄艺潇</a></div>
+</div>
+
+
+
+
+<div onMouseOut="out('txt04','txt044')" onMouseMove="over('txt04','txt044')" class="p_l_01 p00a">
+   <a target="_blank" href="http://yue.ifeng.com/a/20180906/39848614_0.shtml#p=1"><img width="198" height="148" alt="莫文蔚大长腿" src="http://p3.ifengimg.com/a/2018_36/c89363be9023e59.jpg"/></a>
+  <div id="txt04" class="pwTextbg wid195" style="display: none;"></div>
+  <div id="txt044" class="pwText wid195" style="display: none;"><a target="_blank" href="http://yue.ifeng.com/a/20180906/39848614_0.shtml#p=1">尹毓恪写真</a></div>
+</div>
+
+
+
+<div onMouseOut="out('txt05','txt055')" onMouseMove="over('txt05','txt055')" class="p_l_01">
+  <a target="_blank" href="http://yue.ifeng.com/a/20180910/39848636_0.shtml#p=1"><img width="198" height="148" alt="魏晨大片"  src="http://p1.ifengimg.com/a/2018_37/9d0dcb663abe145.jpg" /></a>
+  <div id="txt05" class="pwTextbg wid195" style="display: none;"></div>
+  <div id="txt055" class="pwText wid195" style="display: none;"><a target="_blank" href="http://yue.ifeng.com/a/20180910/39848636_0.shtml#p=1">魏晨大片</a></div>
+</div>
+</div>
+<div class="p_m_box">
+
+
+<div onMouseOut="out('txt0r1','txt0r11')" onMouseMove="over('txt0r1','txt0r11')" class="p_l_0b">
+  <a target="_blank" href="http://yue.ifeng.com/a/20180907/39848619_0.shtml#p=1"><img width="398" height="298" alt="范丞丞" src="http://p3.ifengimg.com/a/2018_36/3a7e8fc8cfb5912.jpg" /></a>
+  <div id="txt0r1" class="pwTextbg wid398" style="display: none;"></div>
+  <div id="txt0r11" class="pwText wid398" style="display: none;"><a target="_blank" href="http://yue.ifeng.com/a/20180907/39848619_0.shtml#p=1">范丞丞</a></div>
+</div>
+
+
+<div onMouseOut="out('txt0r2','txt0r22')" onMouseMove="over('txt0r2','txt0r22')" class="p_l_0c">
+  <a target="_blank" href=http://yue.ifeng.com/a/20180903/39848580_0.shtml#p=1"><img width="398" height="148" alt="SNH48 TEAM FT公演" src="http://p0.ifengimg.com/a/2018_36/87875abb42a49cd.jpg" /></a>
+  <div id="txt0r2" class="pwTextbg wid398" style="display: none;"></div>
+  <div id="txt0r22" class="pwText wid398" style="display: none;"><a target="_blank" href="http://yue.ifeng.com/a/20180903/39848580_0.shtml#p=1">
+SNH48 TEAM FT公演</a></div>
+</div>
+</div>
+<div class="p_r_box">
+
+
+<div onMouseOut="out('txt0r3','txt0r33')" onMouseMove="over('txt0r3','txt0r33')" class="p_r_02">
+  <a target="_blank" href="http://yue.ifeng.com/a/20180912/39848669_0.shtml#p=1"><img width="198" height="298" alt="关晓彤纽约时装周" src="http://p1.ifengimg.com/a/2018_37/6a6c5195323524d.jpg"/></a>
+  <div id="txt0r3" class="pwTextbg wid195" style="display: none;"></div>
+  <div id="txt0r33" class="pwText wid195" style="display: none;"><a target="_blank" href="http://yue.ifeng.com/a/20180912/39848669_0.shtml#p=1">关晓彤纽约时装周</a></div>
+</div>
+
+
+<div onMouseOut="out('txt0r4','txt0r44')" onMouseMove="over('txt0r4','txt0r44')" class="p_r_010">
+  <a target="_blank" href="http://yue.ifeng.com/a/20180910/39848634_0.shtml#p=1"><img width="198" height="148" alt="黄婷婷生日会" src="http://p0.ifengimg.com/a/2018_37/06951c00e2a9c48.jpg" /></a>
+  <div id="txt0r4" class="pwTextbg wid195" style="display: none;"></div>
+  <div id="txt0r44" class="pwText wid195" style="display: none;"><a target="_blank" href="http://yue.ifeng.com/a/20180910/39848634_0.shtml#p=1">黄婷婷生日会</a></div>
+</div>
+</div>
+</div> 
+
+
+   <script type="text/javascript">
+	jq(function(){
+		//换一换
+		var js = 0;
+		var zs = 0;
+		jq(".picWall").each(function(){
+			zs++;
+		});
+		jq("#aHyh").click(function(){
+			js++;
+			if(js == zs)
+				js = 0;
+			jq(".picWall").css("display","none");
+			var i = 0;
+			jq(".picWall").each(function(){
+				if(i==js)
+				{
+					jq(this).css("display","block");
+				}
+				i++;
+			});
+		});
+	});
+
+      function over(txt, txtid) {
+        document.getElementById(txt).style.display = 'block';
+        document.getElementById(txtid).style.display = 'block';
+      }
+      function out(txt, txtid) {
+        document.getElementById(txt).style.display = 'none';
+        document.getElementById(txtid).style.display = 'none';
+      }
+    </script>
+    
+</div>
+
+<div class="adv01">
+
+<!--s_yue_index_ad_banner_02_1000x90 2018.09.04 17:28:14-->
+<script type="text/javascript">try{aptracker.add(512);}catch(e){}</script>
+
+
+<script>    
+iis3_config = {
+					"aids" : [
+						{"ap" : "512", "w" : "1000", "h" : "90","res" : "1"}
+					],
+					"mode" : "1"					
+				  };
+</script>
+<script src="https://c0.ifengimg.com/iis/iis_v3_0.js"></script>
+<!--/s_yue_index_ad_banner_02_1000x90-->
+
+</div>
+
+
+
+
+
+
+<div class="col clearfix">
+ 
+<div id="tabControlArea" >
+<div class="titwrap">
+
+<!--
+<ul class="listtab" id="tab7">
+<li class="current">华语</li>
+<li>欧美</li>
+<li>日韩</li> 
+</ul>
+-->
+
+<div class="tit04">
+<h3 style="width:200px"><a href="javascript:void(0)"  style="color:#000000;">
+    专辑推荐</a></h3>
+</div>
+
+
+</div>
+
+<div class="pictxtwrap">
+<div id="gc1">
+<div class="colLM01  clearfix">
+	<div class="col_L01">
+	<div class="pic02">
+	<div class="Focus">
+	<div class="Focus_pic"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111570089"><img src="http://p1.ifengimg.com/a/2018_36/782a9bd1f86612f.png" alt="" width="320" height="320" border="0" title=""></a></div>
+	<div class="caption" style="display: none;">
+			<div class="reab">
+				<div class="backy"></div>
+				<div class="backy_text"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111570089">《斗破苍穹》电视原声</a></div>
+			</div>
+	  </div>
+	</div>
+	</div>
+	<script type="text/javascript" language="javascript" >
+		jq(function () {
+		jq('.pic02').each(function () {
+			var sliders = jq(this).find('.Focus');
+			sliders.hover(
+
+			function () {
+				var jqthis = jq(this);
+		
+				jqthis.find('.caption').stop(true, true).slideDown(300);
+			}, function () {
+				var jqthis = jq(this);
+			   
+				jqthis.find('.caption').stop(true, true).slideUp(300);
+			});
+		});
+	});
+		</script>
+	</div>
+<div class="col_M01">
+	<div class="picrlist">
+<div class="pic03   ">
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111635972"><img src="http://d.ifengimg.com/w150_h150/p2.ifengimg.com/a/2018_37/e60f0cba94f23d6.png" width="150" height="150" alt="" title=""></a></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111635972">《双面偶像（下）》</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic03   ">
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://music.migu.cn/v2/music/digitalalbum/1110327686"><img src="http://d.ifengimg.com/w150_h150/p1.ifengimg.com/a/2018_36/393503ebc85480e.png" width="150" height="150" alt="" title=""></a></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://music.migu.cn/v2/music/digitalalbum/1110327686">《画外音》</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic03   ">
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111439767"><img src="http://d.ifengimg.com/w150_h150/p3.ifengimg.com/a/2018_36/4e115b5cfa80c79.png" width="150" height="150" alt="" title=""></a></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111439767">《克制凶猛》</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic03   p05 ">
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://music.migu.cn/v2/music/digitalalbum/1111423183"><img src="http://d.ifengimg.com/w150_h150/p2.ifengimg.com/a/2018_36/cbb094f807762ee.png" width="150" height="150" alt="" title=""></a></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://music.migu.cn/v2/music/digitalalbum/1111423183">《Bloom》</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic03   ">
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111437410"><img src="http://d.ifengimg.com/w150_h150/p3.ifengimg.com/a/2018_36/3fdd769a268feed.png" width="150" height="150" alt="" title=""></a></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111437410">《躺着》</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic03   ">
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://music.migu.cn/v2/music/digitalalbum/1111441339"><img src="http://d.ifengimg.com/w150_h150/p3.ifengimg.com/a/2018_36/bcd4129bb9805f0.png" width="150" height="150" alt="" title=""></a></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://music.migu.cn/v2/music/digitalalbum/1111441339">《THE FIRST II》</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic03   ">
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111329264"><img src="http://d.ifengimg.com/w150_h150/p0.ifengimg.com/a/2018_35/48ac27106a9e15a.png" width="150" height="150" alt="" title=""></a></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111329264">《喜欢你》TFBOYS</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="pic03   p05 ">
+<div class="Focus01">
+<div class="Focus_pic01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111456030"><img src="http://d.ifengimg.com/w150_h150/p0.ifengimg.com/a/2018_37/29b7902b4671df5.png" width="150" height="150" alt="" title=""></a></div>
+<div class="caption01" style="display: none;">
+        <div class="reab01">
+            <div class="backy01"></div>
+            <div class="backy_text01"><a target="_blank" href="http://music.migu.cn/v2/music/album/1111456030">《笔下之城》</a></div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<script type="text/javascript"> 
+	jq(function () {
+	
+		jq('.pic02').each(function () {
+			var sliders = jq(this).find('.Focus');
+			sliders.hover(
+
+			function () {
+				var jqthis = jq(this);
+		
+				jqthis.find('.caption').stop(true, true).slideDown(300);
+			}, function () {
+				var jqthis = jq(this);
+			   
+				jqthis.find('.caption').stop(true, true).slideUp(300);
+			});
+		});
+		
+		jq('.picrlist').each(function () {
+			var sliders = jq(this).find('.Focus01');
+			sliders.hover(
+
+			function () {
+				var jqthis = jq(this);
+			   
+				jqthis.find('.caption01').stop(true, true).slideDown(300);
+			}, function () {
+				var jqthis = jq(this);
+				
+				jqthis.find('.caption01').stop(true, true).slideUp(300);
+			});
+		});
+		
+		
+	});
+
+		//标签切换
+		var entbest=new TabControl();
+		entbest.addRange($("tab7").getElementsByTagName("li"),['gc1','gc2','gc3']);	
+		entbest.triggerType = 'mouseover'; //鼠标切换方式设置 点击切换：click 鼠标移上去切换: mouseover
+		entbest.defaultPage =0;			//缺省显示第几页
+		entbest.init();
+</script>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col clearfix colp01">
+<!-- hidden content -->
+<div class="list05 clearfix">
+<!-- hidden content -->
+<!-- hidden content -->
+<!-- hidden content -->
+
+    <ul id='up2'style="display:none" >
+   
+            <li>
+       
+            <div class="list_01"   style="display:none;" >
+            <div class="num"> 01   </div>
+            <div class="song"><a target="_blank"> 刚好遇见你</a></div>
+            <div class="name">李玉刚</div>
+            </div>
+            <div class="list_02 clearfix"   >
+            <div class="num01">01  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1104891075/fenghuang/1/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p2.ifengimg.com/a/2017_11/447943cc6f83af7.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1104891075/fenghuang/1/001002A" target="_blank"> 刚好遇见你</a></h3>
+            <p>李玉刚</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 02   </div>
+            <div class="song"><a target="_blank"> 三生三世  张杰</a></div>
+            <div class="name"></div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">02  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1104723886/fenghuang/3/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p1.ifengimg.com/a/2017_11/239c5d5b6c38098.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1104723886/fenghuang/3/001002A" target="_blank"> 三生三世  张杰</a></h3>
+            <p></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 03   </div>
+            <div class="song"><a target="_blank">成都  赵雷</a></div>
+            <div class="name"></div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">03  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1104836788/fenghuang/5/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p2.ifengimg.com/a/2017_11/b3459b172cddce4.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1104836788/fenghuang/5/001002A" target="_blank">成都  赵雷</a></h3>
+            <p></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 04   </div>
+            <div class="song"><a target="_blank">刚刚好  薛之谦</a></div>
+            <div class="name"></div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">04  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1003736866/fenghuang/7/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p0.ifengimg.com/a/2017_11/376bad3526ed216.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1003736866/fenghuang/7/001002A" target="_blank">刚刚好  薛之谦</a></h3>
+            <p></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 05   </div>
+            <div class="song"><a target="_blank">告白气球  周杰伦</a></div>
+            <div class="name"></div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">05  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1004202180/fenghuang/4/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2017_11/c400d99342e89fd.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1004202180/fenghuang/4/001002A" target="_blank">告白气球  周杰伦</a></h3>
+            <p></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 06   </div>
+            <div class="song"><a target="_blank">动物世界</a></div>
+            <div class="name"></div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">06  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1104947407/fenghuang/6/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2017_15/982d0de00683b7f.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1104947407/fenghuang/6/001002A" target="_blank">动物世界</a></h3>
+            <p></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 07   </div>
+            <div class="song"><a target="_blank">凉凉  杨宗纬,张碧晨</a></div>
+            <div class="name"></div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">07  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1104723885/fenghuang/2/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2017_11/b76d3b0d019fc49.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1104723885/fenghuang/2/001002A" target="_blank">凉凉  杨宗纬,张碧晨</a></h3>
+            <p></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 08   </div>
+            <div class="song"><a target="_blank">线 刘惜君</a></div>
+            <div class="name"></div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">08  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1104853258/fenghuang/9/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2017_14/4e8fcad9426b4e0.jpeg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1104853258/fenghuang/9/001002A" target="_blank">线 刘惜君</a></h3>
+            <p></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num"> 09   </div>
+            <div class="song"><a target="_blank">逃  侯旭</a></div>
+            <div class="name"></div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01">09  </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1004035265/fenghuang/9/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p2.ifengimg.com/a/2017_15/2e1024deef517d6.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1004035265/fenghuang/9/001002A" target="_blank">逃  侯旭</a></h3>
+            <p></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+        <li>
+       
+            <div class="list_01"   >
+            <div class="num">  10  </div>
+            <div class="song"><a target="_blank">因为遇见你  阿悄,朱元冰</a></div>
+            <div class="name"></div>
+            </div>
+            <div class="list_02 clearfix"  style="display:none;"  >
+            <div class="num01"> 10 </div>
+            <div class="picTxtR">
+            <a href="http://music.migu.cn/#/song/1104853257/fenghuang/10/001002A" target="_blank"><img src="http://d.ifengimg.com/w65_h65/p3.ifengimg.com/a/2017_15/28622674e9d025d.jpg" width="65" height="65" /></a>
+            <div class="picR01">
+            <div class="picR01_01">
+            <h3><a href="http://music.migu.cn/#/song/1104853257/fenghuang/10/001002A" target="_blank">因为遇见你  阿悄,朱元冰</a></h3>
+            <p></p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </li>    
+        
+    </ul>
+
+
+<script>
+	jq().ready(function (){
+	jq(".listwr01 li").mouseover(function(){
+	jq(".listwr01 li").css("background-color","#f4f4f4");
+		if(jq(this).attr("class") != "dwth")
+			jq(this).css("background","url(http://y3.ifengimg.com/9949a678442334cc/2013/1120/gree.jpg) no-repeat 207px center #FFF")
+		else
+			jq(this).css("background-color","#fff");
+		jq("[name=pic001jian]").removeClass("pic001lu");
+		jq("[name=pic001jian]").attr("class","pic001jian");
+		if(jq(this).index()!=0){
+		jq(this).parent().find(jq("[name=pic001jian]")).removeClass("pic001lu");
+		jq(this).parent().find(jq("[name=pic001jian]")).attr("class","pic001jian");
+		}else{
+		jq(this).find(jq("[name=pic001jian]")).removeClass("pic001jian")
+		jq(this).find(jq("[name=pic001jian]")).attr("class","pic001lu");
+		jq(".listwr01 li .num04").css("color","#2b2b2b");
+		jq(".listwr01 .ltit03 a").css("color","#2b2b2b");
+		
+		jq(this).find(".num04").css("color","#339933");
+		jq(this).find(".ltit03 a").css("color","#339933");
+		}
+		
+		 
+		//字体颜色
+		jq(".listwr01 li .song01").css("color","#2b2b2b");
+		jq(".listwr01 li .num05").css("color","#2b2b2b");
+		
+		jq(this).find(".song01").css("color","#339933");
+		jq(this).find(".num05").css("color","#339933");
+		
+	});
+	jq(".listwr01 li").mouseout(function(){
+	jq(".listwr01 li").css("background-color","#f4f4f4");
+		jq("[name=pic001jian]").removeClass("pic001lu");
+		jq("[name=pic001jian]").attr("class","pic001jian");
+		if(jq(this).index()!=0){
+		jq(this).parent().find(jq("[name=pic001jian]")).removeClass("pic001lu");
+		jq(this).parent().find(jq("[name=pic001jian]")).attr("class","pic001jian");
+		}else{
+		jq(".listwr01 li .num04").css("color","#2b2b2b");
+		jq(".listwr01 .ltit03 a").css("color","#2b2b2b");
+		}
+		jq(".listwr01 li").find(".ship02").find("img").attr("src","http://y3.ifengimg.com/9949a678442334cc/2013/1120/jian.jpg");
+		//字体颜色
+		jq(".listwr01 li .song01").css("color","#2b2b2b");
+		jq(".listwr01 li .num05").css("color","#2b2b2b");
+		if(jq(this).attr("class") != "dwth")
+			jq(this).css("background","url(http://y3.ifengimg.com/9949a678442334cc/2013/1120/jian.jpg) no-repeat 207px center")
+	});
+	
+	});
+
+</script>
+
+
+</div>
+
+</div>
+<div class="col clearfix colp01">
+<div class="tit07">
+<h3>合作机构</h3>
+</div>
+<ul class="list018">
+   <li><a href="http://www.a8.com/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p01.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.treemusic.com.cn/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p02.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.ccd126.com/" target="_blank"><img src="http://y0.ifengimg.com/00cd7cb92522610e/2013/0419/4c7550ccc59b5862f664bd914c858d80.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.shuiniaoticket.com/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p04.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.yuehuamusic.com/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p05.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://2947858.5sing.com/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p06.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.yinyuetai.com/links" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p07.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://ent.cntv.cn/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p08.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://music.youku.com/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p09.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.10339.com/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p10.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://ent.southcn.com/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p11.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://ent.ts.cn/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p12.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.gogomusic.cn/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p13.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.music-dct.com.cn/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p14.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.xwx.cn/" target="_blank"><img src="http://y2.ifengimg.com/38716b164e0f5e63/2013/0126/p15.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.duomi.com/" target="_blank"><img src="http://y1.ifengimg.com/b19fadab6fcc0645/2013/0402/11111.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.kugou.com/" target="_blank"><img src="http://y3.ifengimg.com/00cd7cb92522610e/2013/0402/4b17ea215c8a2d5fc4402a01bfa7cbfc.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+   <li><a href="http://www.migu.cn/" target="_blank"><img src="http://y0.ifengimg.com/00cd7cb92522610e/2013/0402/136d6f398e18fea8269f9bebe7bb0b68.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+
+<li><a href="http://www.67.com/" target="_blank"><img src="http://y2.ifengimg.com/00cd7cb92522610e/2013/0521/ef2648f60e479bbec04f7f384c19b633.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+
+<li><a href="http://www.yulehezi.com/" target="_blank"><img src="http://y3.ifengimg.com/00cd7cb92522610e/2013/0607/109086e8afa545406cdb70ef19c753cb.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+
+
+<li><a href="http://www.9sky.com" target="_blank"><img src="http://y1.ifengimg.com/a/2016_03/7b3fa0813db108e.jpg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+
+<li><a href="http://218.206.84.102:8080/migu/music/IfengFM-FM_imusic-release.apk" target="_blank"><img src="http://p2.ifengimg.com/a/2018_19/f2b824a25e23635.jpeg" width="153" height="58" title="图片名称" alt="图片名称"></a></li>
+
+
+
+
+</ul>
+</div>
+
+<div class="adv01 p0_3">
+
+<!--s_yue_index_ad_banner_bottom_1000x90 2018.09.14 09:11:44-->
+<script type="text/javascript">try{aptracker.add(2844);}catch(e){}</script>
+
+
+<div id="AP890" style="display:none;">
+<code>
+<!--BOF
+<var style="display:none;" v="2844,0,0,NULL,fixture"></var><iframe src="http://www.ifeng.com/ssi-incs/s_all_index_ad_banner_bottom.inc.html" scrolling="no" frameborder="0" style="width:1000px; height:90px; border:0px;background-color=transparent;" allowtransparency="true"></iframe>
+EOF-->
+</code>
+</div>
+<script language="javascript">
+try{
+	if(INice.getCookie('prov') == '9999'){
+		document.write("<div id='div-gpt-ad-1407410161077-0' style='width:1000px; height:90px;'><script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1407410161077-0'); });</" + "script></div>");	
+	}else{
+		try{
+			var defaultAdRotatorConfig = {maxTimes : 1, saleMode : "CPD"};
+			new adRotatorFactory({identifier : "AP890"});
+		}catch(e){}
+	}
+}catch(e){}
+</script>
+<script type="text/javascript">
+impHandel("https://dolphin.deliver.ifeng.com/c?z=ifeng&la=0&si=2&ci=23&cg=22&c=29&or=232&l=807&bg=807&b=805&u=https://y0.ifengimg.com/34c4a1d78882290c/2012/0528/1x1.gif")
+function impHandel(imp){var impressionSource = document.createElement('div');  impressionSource.style.display = "none";impressionSource.innerHTML = "<img src='" + imp + "' style='width:1px;height:1px;border:none;' />";document.body.insertBefore(impressionSource , document.body.childNodes[0]);}
+</script>
+
+<!--/s_yue_index_ad_banner_bottom_1000x90-->
+
+</div>
+
+<div class="footer mt02">
+    <!--通用页尾开始-->
+    <style>
+        .footer{ width:1000px; margin:0 auto; border-top:1px solid #ccc}
+        .footer .footlink{color:#000; height:28px; line-height:28px; padding-top:15px; border-top:1px solid #fff; overflow:hidden;}
+        .footer .footlink a{ color:#000;}
+        .footer .footlink span{padding:0 5px;}
+        .footer .fk_l{ float:left;}
+        .footer .fk_r{ width:200px; float:right;}
+        .footer .fk_r ul{ overflow:hidden;}
+        .footer .fk_r ul li{ height:28px; line-height:28px; overflow:hidden; float:left;}
+        .footer .fk_r ul .l_bg001{ background:url(http://y1.ifengimg.com/38716b164e0f5e63/2013/0716/nav0416_14.gif) no-repeat left 9px; padding-left:19px;}
+        .footer .fk_r ul .l_bg002{ background:url(http://y3.ifengimg.com/9db17ab793eef980/2013/0403/nav0416_17.gif) no-repeat left 9px; padding-left:17px; margin-left:18px;}
+        .footer .copyright{ font-family:Arial; color:#666; height:28px; line-height:28px; text-align:center; overflow:hidden;}
+        .footer .copyright span{ font-family:"宋体";}
+    </style>
+    <div class="footlink clearfix">
+    <div class="fk_l"><a href="http://www.ifeng.com/corp/about/intro/" target="_blank">凤凰新媒体介绍</a><span>|</span><a href="http://ir.ifeng.com/" target="_blank">投资者关系 Investor Relations</a><span>|</span><a href="http://biz.ifeng.com/" target="_blank">广告服务</a><span>|</span><a href="http://career.ifeng.com/" target="_blank">诚征英才</a><span>|</span><a href="http://www.ifeng.com/corp/privacy/" target="_blank">保护隐私权</a><span>|</span><a href="http://www.ifeng.com/corp/exemption/" target="_blank">免责条款</a><span>|</span><a href="http://www.ifeng.com/corp/feedback/" target="_blank">意见反馈</a><span>|</span><a href="http://phtv.ifeng.com/intro/" target="_blank">凤凰卫视介绍</a></div>
+        <div class="fk_r">
+          <ul class="clearfix">
+           <li class="l_bg001"><a href="http://v.ifeng.com/" target="_blank" title="视频">视频</a></li>
+           <li>·<a href="http://v.ifeng.com/documentary/" target="_blank" title="纪实">纪实</a></li>
+           <li>·<a href="http://v.ifeng.com/live/" target="_blank" title="直播">直播</a></li>
+           <li class="l_bg002"><a href="http://phtv.ifeng.com/" target="_blank" title="凤凰卫视">凤凰卫视</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="copyright"><span>凤凰新媒体&nbsp;版权所有</span>&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 2013 Phoenix New Media Limited All Rights Reserved.</div>
+    
+    <!-- new statistic start 2015/6/24 -->
+    <script> var sta_collection_time = new Date().getTime();</script>
+    <script id="sta_collection_new">
+    window.analytics(encodeURIComponent(window.location.href));
+    setTimeout(function(){
+        window.aptracker.collection();
+        window.remain();
+    },800);
+    </script>
+    <!-- new statistic end -->
+    
+    <div id="ifeng_da_le" style="width: 1px; height: 1px;">
+    <script src="http://m3.ifengimg.com/ifeng/sources/120331-iImpression.js"></script>
+    </div>
+ <!-- START WRating v1.0 -->
+<script type="text/javascript" src="http://y2.ifengimg.com/e01ed39fc2da5d4a/2014/0113/wrating.js">
+</script>
+<script type="text/javascript">
+var vjAcc="860010-2063990101";
+var wrUrl="http://ifeng.wrating.com/";
+vjTrack("");
+</script>
+<noscript><img src="http://ifeng.wrating.com/a.gif?a=&c=860010-2063990101" width="1" height="1"/></noscript>
+<!-- END WRating v1.0 -->
+    <!--[if !IE]>footer.130710<![endif]-->
+    <!--通用页尾结束-->
+</div>
+
+<!--s_yue_index_ad_icon 2018.09.14 09:11:44-->
+<script type="text/javascript">try{aptracker.add(2845);}catch(e){}</script>
+
+
+
+<var style="display:none;" v="2845,0,0,NULL,fixture"></var>
+
+<!--/s_yue_index_ad_icon-->
+
+<!--pid:yue.ifeng.com-->
+</body>
+</html>
