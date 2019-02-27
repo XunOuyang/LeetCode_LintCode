@@ -8,6 +8,7 @@ self.rank:
     It`s different from the height of a tree. A node with higher rank means they got more nodes linked to this chain.
     Parents will show the root of the chain.
 """
+```
 
 class Union_Find(object):
     def __init__(self, N):
@@ -32,6 +33,6 @@ class Union_Find(object):
         else:
             self.parent(px) = py
         return True
-        
+```
         
             
