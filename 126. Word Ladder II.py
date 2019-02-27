@@ -5,7 +5,7 @@ Created on Thu Aug 30 09:54:38 2018
 @author: tzlmyq
 """
 """
-this is a very hard problem
+this is an interview problem from Fin Tech Affirm
 """
 
 import time
@@ -33,7 +33,7 @@ class Solution(object):
                         res.append(k)
                 else:
                     for i in range(len(word)):
-                        for char in "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM":
+                        for char in "qwertyuiopasdfghjklzxcvbnm":
                             new_word = word[:i]+char+word[i+1:]
                             if new_word in wordSet:
                                 for k in d[word]:
