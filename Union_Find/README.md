@@ -6,8 +6,10 @@ This is a standard template for union find.
 self.rank:
     the parameter to show each node its ranking. If a node is connected with another one, they have the same ranking.
     It`s different from the height of a tree. A node with higher rank means they got more nodes linked to this chain.
-    Parents will show the root of the chain.
+self.parent:
+    The root of the chain for each node.
 """
+
 ```
 
 class Union_Find(object):
