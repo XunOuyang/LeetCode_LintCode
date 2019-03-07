@@ -27,8 +27,8 @@ int find(vector<int>& nums, int target) {
             left = mid + 1;
         else
             right = mid - 1;
-    if nums[left+1] == target:
-        return left + 1;
+    if nums[left] == target:
+        return left;
     return -1;
 ```
 
