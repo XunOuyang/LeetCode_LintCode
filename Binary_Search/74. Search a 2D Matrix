@@ -1,0 +1,30 @@
+/*
+Again, this is a typical binary search problem without many tricks.
+We can consider the 2D matrix to be an array.
+The only thing we need to pay attention to is the matrix.empty() part.
+We need to verify it is not empty before we move to the next. Or it will
+show an error reference binding to null pointer of type 'value_type'. 
+*/
+
+class Solution {
+public:
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        if(matrix.empty() || matrix[0].empty())
+            return false;
+        int m = matrix.size(), n = matrix[0].size();
+        int left = 0, right = m * n - 1;
+        if(right == 0)
+            return matrix[0][0] == target;
+        while(left <= right) {
+            int mid = left + (right - left) / 2;
+            int row = mid / n, col = mid % n;
+            if(matrix[row][col] == target)
+                return true;
+            else if(matrix[row][col] < target)
+                left = mid + 1;
+            else
+                right = mid - 1;
+        }
+        return false;
+    }
+};
