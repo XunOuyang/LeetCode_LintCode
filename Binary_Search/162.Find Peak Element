@@ -1,0 +1,27 @@
+/*
+This is a typical binary search problem.
+We are not looking for nums[mid] here.
+
+As nums[mid] < nums[mid+1], we do left = mid + 1, at this time, 
+nums[mid+1] is possible to be the peak elements, which means, left
+might be the element we are looking for.
+As nums[mid] >= nums[mid+1], we do right = mid, at this time, 
+nums[mid] is possilble to be the peak elements, which means, right 
+might be the element we are looking for.
+*/
+
+
+class Solution {
+public:
+    int findPeakElement(vector<int>& nums) {
+        int left = 0, right = nums.size()-1;
+        while(left < right) {
+            int mid = (left + right)/2;
+            if(nums[mid] < nums[mid+1])
+                left = mid + 1;
+            else
+                right = mid;
+        }
+        return left;
+    }
+};
