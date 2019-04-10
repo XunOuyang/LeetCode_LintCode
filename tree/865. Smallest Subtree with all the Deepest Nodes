@@ -1,0 +1,54 @@
+Python: As Lee`s method
+
+之前PlusAI phone interview也考过类似的题目，需要利用到一个函数返回值是两个元素，在这个例子中，返回的第一个是节点的深度，第二个是所求的节点。
+这是python特有的性质，可以好好利用。
+
+class Solution(object):
+    def depth(self, node):
+        if not node:
+            return 0, None
+        left, right = self.depth(node.left), self.depth(node.right)
+        if left[0] > right[0]:
+            return left[0] + 1, left[1]
+        elif left[0] < right[0]:
+            return right[0] + 1, right[1]
+        else:
+            return left[0] + 1, node
+    
+    def subtreeWithAllDeepest(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        return self.depth(root)[1]
+
+如果不想利用一个函数返回两个不同类型的数据，怎么做呢，以下是mzchen的解法：
+class Solution {
+public:
+    int depth(TreeNode *root) {
+        return !root ? 0 : max(depth(root->left), depth(root->right)) + 1;
+    }
+
+    TreeNode* subtreeWithAllDeepest(TreeNode* root) {
+        int d = depth(root->left) - depth(root->right);
+        return !d ? root : subtreeWithAllDeepest(d > 0 ? root->left : root->right);
+    }
+};
+
+以下是我自己修改的python版本的答案。
+
+class Solution(object):
+    def depth(self, node):
+        return 0 if not node else max(self.depth(node.left), self.depth(node.right)) + 1
+    
+    def subtreeWithAllDeepest(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        if not root:
+            return root
+        d = self.depth(root.left) - self.depth(root.right)
+        return root if not d else self.subtreeWithAllDeepest(root.left if d > 0 else root.right)
+        
+总而言之，对于解答树的问题，一定还是要多利用recursion。
