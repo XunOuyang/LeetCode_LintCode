@@ -1,10 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jan  7 10:01:41 2019
-
-@author: TZLMYQ
-"""
-
+# Python 
+```
 class Solution(object):
     def subsets(self, nums):
         """
@@ -21,8 +16,6 @@ class Solution(object):
             path.extend([nums[i]])
             self.dfs(nums, i+1, path, res)
             path.pop()
-            
-            
     """
     The code above is more standardized. Save as C++
     the code above equals to the code below:
@@ -32,3 +25,25 @@ class Solution(object):
             self.dfs(nums, i+1, path + [nums[i]], res)
     
     """
+    
+# C++ 
+    
+class Solution {
+public:
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>> res;
+        vector<int> temp;
+        backtrack(nums, 0, temp, res);
+        return res;
+    }
+    
+private:
+    void backtrack(vector<int>& nums, int index, vector<int>& temp, vector<vector<int>>& res) {
+        res.push_back(temp);
+        for(int i=index; i < nums.size(); i++) {
+            temp.push_back(nums[i]);
+            backtrack(nums, i + 1, temp, res);
+            temp.pop_back();
+        }
+    }
+}; 
