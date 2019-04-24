@@ -1,0 +1,42 @@
+C++ version
+
+The backtrack template: 
+backtrack(nums, d, N, index, path, res)
+
+
+```
+class Solution {
+public:
+    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+        vector<vector<int>> res;
+        vector<int> path;
+        sort(candidates.begin(), candidates.end());
+        backtrack(candidates, path, 0, target, res);
+        return res;
+    }
+    
+    void backtrack(vector<int>& candidates, vector<int>& path, int index, int target, vector<vector<int>>& res) {
+        if(accumulate(path.begin(), path.end(), 0) == target) {
+            res.push_back(path);
+            return ;
+        }
+        else if(accumulate(path.begin(), path.end(), 0) > target)
+            return ;
+        for(int i=index; i < candidates.size(); i++) {
+        // Actually here i > index should be splited into 2 section: i > 0, i != index.
+        // i > 0 makes sure candidates[i] == candidates[i-1] is legit. 
+        // i != index might be a little bit hard to understand. index means layers. 
+        // if i == index, then each time, at different depth of the path, the value of the newly added number candidate[i] 
+        // can be duplicated as the previous one. if i !=- index, means, it is possible, that it will be at the same depth
+        // of the path.
+            if(i > index && candidates[i] == candidates[i-1])
+                continue;
+            else {
+                path.push_back(candidates[i]);
+                backtrack(candidates, path, i+1, target, res);
+                path.pop_back();
+            }
+        }
+    }
+};
+```
