@@ -1,6 +1,18 @@
-// A very good question. Cannot use recursion directly. So we need to create a wrapper first. We need to understand what the wrapper looks like. What do we want to add to the wrapper. The return condition.
+// A very good question. Cannot use recursion directly. So we need to create a wrapper first. 
+//We need to understand what the wrapper looks like. What do we want to add to the wrapper. The return condition.
+// Also, please understand do not mix the code below, I made mistakes here when I first tried to approach this problem.
 
+```
+while(n-->0) {
 
+}
+```
+The code above is different than the code below:
+```
+while(n) {
+    n--;
+}
+```
 ```
 class Solution {
 public:
