@@ -4,6 +4,7 @@ Created on Thu Jun 07 08:39:40 2018
 
 @author: tzlmyq
 """
+```
 class TreeNode(object):
     def __init__(self, val):
         self.val = val
@@ -27,7 +28,7 @@ class Solution(object):
         else:
             return left or right
         return right
-
+```
  ``` //C++ version
     /**
  * Definition for a binary tree node.
