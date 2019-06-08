@@ -1,0 +1,21 @@
+This is a problem which looks pretty easy. But the truth is, people must pay attention to the 2 for loop.
+If we loop through the amount, it will be wrong. Why is that, because for this problem, we are not focusing on 
+the permutation, the order does not matter. For instance, 7 can be expressed as 2 + 5, it equals 5 + 2. But if we 
+implement the amount for loop first, then we will count it twice. 
+```
+class Solution {
+public:
+    int change(int amount, vector<int>& coins) {
+        int dp[amount+1] = {0};
+        dp[0] = 1;
+        for(auto coin:coins)
+         {
+            for(int i=1; i<amount+1; i++) {
+                if(coin <= i)
+                    dp[i] += dp[i-coin];
+            }
+        }
+        return dp[amount];
+    }
+};
+```
