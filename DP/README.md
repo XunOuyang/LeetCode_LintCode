@@ -11,12 +11,13 @@ string1 : HEAT
 string2: HIT
 
 先手写出dp矩阵的值，然后反过来根据值来写通用表达式
+```
        H    E    A   T      
    0   0    1    2    3
 H  0   0    1    2    3
 I  1   1    2    3    4
 T  2   2    3    4    3
-
+```
 那么就不难得出通用表达式了：
 ```
 if str1[i] == str2[j]:
@@ -63,8 +64,8 @@ s = "ho"
 p = "*ho"
 首先需要生成以下的基础matrix:                  最终的matrix 应该如下
 
-	 s:       h     o                     s:       h    o  
-	 p:  T   T    T                       p:  T    T    T
+	 s:       h    o                      s:       h    o  
+	 p:  T    T    T                      p:  T    T    T
 	 *   T    F    F                      *   T    T    T
 	 *   T    F    F                      *   T    T    T
 	 h   F    F    F                      h   F    T    F
