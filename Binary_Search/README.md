@@ -48,4 +48,4 @@ int find(vector<int>& nums, int target) {
     return -1;
 ```
 
-The template above cannot solve all the problems. For example, check 852. Peak Index in a Mountain Array
+The template above cannot solve all the problems. 
