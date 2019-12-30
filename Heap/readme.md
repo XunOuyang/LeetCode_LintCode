@@ -41,13 +41,14 @@ print(heapq.nsmallest(3, li1))
 ```
 ### Priority Queue
 ```
+# Initialize Priority Queue
 from Queue import PriorityQueue
 q = PriorityQueue()
 q.put(3)
 q.put(5)
 q.put(4)
-
-q.get()
+# It will output the smallest element of the priority queue
+print(q.get())
 ```
 
 ## C++
