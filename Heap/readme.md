@@ -40,6 +40,7 @@ print("The 3 smallest numbers in list are : ",end="")
 print(heapq.nsmallest(3, li1)) 
 ```
 ### Priority Queue
+When we wanted to check if the priority queue is empty or not, we need to use q.qsize() > 0.
 ```
 # Initialize Priority Queue
 from Queue import PriorityQueue
