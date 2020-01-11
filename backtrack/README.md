@@ -1,6 +1,6 @@
 A backtrack template:
 
-````
+```
 def backtrack(self, nums, index, path, res):
     if when condition meets: 
     """
