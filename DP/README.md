@@ -144,3 +144,33 @@ dp[i][j] = min(dp[i+1][j], dp[i][ j+1] ) - dungeon[i][j]
 if dp[i][j] < 1:
 	dp[i][j] = 1
 ```
+
+
+Palindrome 系列：
+1143. Longest Common Subsequence
+这道题是这系列里三个题最基本的：就是找两个string的共同子序列
+还是按照模板，通解的formula也非常简单
+```
+def longestCommonSubsequence(self, text1, text2):
+"""
+:type text1: str
+:type text2: str
+:rtype: int
+"""
+m, n = len(text1), len(text2)
+dp = [[0 for j in range(n+1)] for i in range(m+1)]
+for i in range(m):
+    for j in range(n):
+	if text1[i] == text2[j]:
+	    dp[i+1][j+1] = dp[i][j]+1
+	else:
+	    dp[i+1][j+1] = max(dp[i+1][j], dp[i][j+1])
+return dp[-1][-1]
+```
+把这道题拓展一点，就成了516. Longest Palindromic Subsequence，最长parlindromic 子序列。
+也就相当于1143，但是把两个子序列，用s和s[::-1]替换了。解题思路和代码一模一样。
+
+再拓展一点呢？就成了1312. Minimum Insertion Steps to Make a String Palindrome
+这道题是要我们找，如何在一个string里面，添加最少的字母让它成为palindrome。那么也就意味着
+如果我本来可以找出来这部分的程序中，已有的palindrome，那么剩余的自然而然也就是需要添加的部分。
+同理，这道题的程序和接待也与1143一模一样了。
