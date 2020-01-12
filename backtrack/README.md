@@ -43,10 +43,25 @@ def backtrack(self, nums, index, path, res, target):
         # use the same elements multiple times. but if we use index, it means that we can 
         # use the same elements multiple times.
 ```
+## Variance 4
+If we do not need a new starting point to iterate the rest nums, we do not need a loop in the 
+backtrack function. Such as leetcode 301
+```
+def backtrack(self, nums, index, path, res, target):
+    if index == len(nums):
+        res.append(path)
+        return
+    if condition:
+        self.backtrack(nums, index+1...)
+    elif condition:
+        self.backtrack(nums, index+1...)
+    else:
+        self.backtrack(nums, index+1...)
+```
 
 
 
-Be very careful about it. C++ template will be different than python`s, why ?
+Be very careful about it. C++ template will be different than python template, why ?
 In C++, we usually could do something like:
 
 ```
