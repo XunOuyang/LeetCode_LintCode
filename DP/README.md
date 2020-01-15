@@ -174,3 +174,14 @@ return dp[-1][-1]
 这道题是要我们找，如何在一个string里面，添加最少的字母让它成为palindrome。那么也就意味着
 如果我本来可以找出来这部分的程序中，已有的palindrome，那么剩余的自然而然也就是需要添加的部分。
 同理，这道题的程序和接待也与1143一模一样了。
+
+
+Array 连续累加问题： （特别需要注意这类题型的写法）
+Leetcode 560
+Leetcode 974
+leetcode 325
+
+Leetcode 1074
+Leetcode 363
+Are follow-ups, basically they extend this problem from 1 dimension to 2 dimension.
+
