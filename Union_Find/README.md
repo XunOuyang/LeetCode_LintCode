@@ -146,7 +146,7 @@ int unifind(int a){// find the root and compress the path
 }
 ```
 ##合并集合函数
-![alt text](https://github.com/XunOuyang/LeetCode/Union_Find/image/clipboard.png)
+![alt text](https://github.com/XunOuyang/LeetCode/tree/master/Union_Find/image/clipboard.png)
 
 这就是所谓并查集的并了。至于怎么知道两个集合是可以合并的，那就是题目的条件了。
 先看代码：
