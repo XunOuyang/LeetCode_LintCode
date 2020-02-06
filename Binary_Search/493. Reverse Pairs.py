@@ -1,3 +1,7 @@
+"""
+Same problem as 315, multiple solutions to it
+"""
+
 class Solution(object):
     def reversePairs(self, nums):
         stack = []
