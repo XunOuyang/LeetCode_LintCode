@@ -1,3 +1,10 @@
+# 动态规划
+我们如何判断一道题是不是该用DP？
+动态规划大体上分两种：
+1. top down。通常我们还说，top down with memorization。其实这是一种自上而下，记住遍历过的值的递归算法。
+2. bottom up。有些书上说，这个才是真正意义上递归。又叫bottom up with tablutation. 
+
+
 总结了一下dynamic programming的formula:
 如何写出通用表达式呢：
 可以这么做拿到题，比如
