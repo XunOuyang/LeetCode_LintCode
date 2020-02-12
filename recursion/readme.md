@@ -37,7 +37,8 @@ int depth(struct node* root)
 }  
 ```
 
-# check if a binary tree is balanced (to all the nodes, the depth difference between its left leave and right leave cannot exceed 1)
+# 
+check if a binary tree is balanced (to all the nodes, the depth difference between its left leave and right leave cannot exceed 1)
 ```
 bool isBalannced(TreeNode *root)
 {
@@ -53,6 +54,7 @@ bool isBalannced(TreeNode *root)
 
 # Permutation
 
+其实 permutation 用下面方法并不是很好。参考Leetcode46，47两题的解答。
 ```
 void recursion(vector<int>& nums, int index, vector<vector<int>>& res)
 {
@@ -70,3 +72,15 @@ void recursion(vector<int>& nums, int index, vector<vector<int>>& res)
 }
 ```
 
+# Subset
+void recursion(vector<int>& nums, vector<int>& path, int index, vector<vector<int>>& res) {
+    res.push_back(path);
+    for(int i=index; i<nums.size(); i++) {
+        path.push_back(nums[i]);
+        backtrack(nums, path, i+1, res);
+        path.pop_back();
+    }
+    return ;
+}
+
+递归还有非常多的应用应该是用在linked list和tree的结构中。
