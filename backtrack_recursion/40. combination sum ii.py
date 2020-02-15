@@ -27,7 +27,9 @@ class Solution(object):
             And here, all the number can be used only once. That`s why we will have 
             self.backtrack(candidates, i+1 ... ) instead of self.backtrack(candidates, i ... )
             what was more, in this problem, there could be duplicates in the candidates,
-            so 
+            so in order to eliminate duplicates. we need to use i > index and candidates[i-1] == candidates[i]
+            it is not hard to understand that we need to use candidates[i-1] == candidates[i]. But why i > index instead of 
+            i > 0 ? when i == index, path is not empty. but when i > index, path could be empty, and duplicate exist.
             """
             if i > index and candidates[i-1] == candidates[i]:
                 continue
