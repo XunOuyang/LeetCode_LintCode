@@ -4,6 +4,8 @@ Different types of problem
 
 ## Trie
 ## Dynamic Programming
+#### 560, 974, 325
+#### 
 ## DFS
 ## BFS
 ## Tree
@@ -15,7 +17,4 @@ Different types of problem
 ## Union_find
 ## Array
 ### continuous subarray
-#### 560
-#### 974
-#### 325
-#### 
+
