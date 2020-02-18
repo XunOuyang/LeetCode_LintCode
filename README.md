@@ -1,6 +1,6 @@
 # LeetCode
 
-Differennt types of problem
+Different types of problem
 
 ## Trie
 ## Dynamic Programming
@@ -13,3 +13,9 @@ Differennt types of problem
 ## Binary Search
 ## Backtrack
 ## Union_find
+## Array
+### continuous subarray
+#### 560
+#### 974
+#### 325
+#### 
