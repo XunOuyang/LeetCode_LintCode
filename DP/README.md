@@ -64,7 +64,7 @@ class Solution:
         self.dp[n] = res
         return res
 ```
-## bottom up with tablutationn
+## bottom up with tabulation
 bottom-up with tabulation
 相比于top-down，bottom-up的特点是使用循环而非递归，先解决子问题，再利用子问题的答案解决父问题。tabulation也很好理解，即用一个表格存放子问题的答案，然后查表获得父问题需要的所有信息去解决父问题，解决后也填在表中，直至把表填满。
 
