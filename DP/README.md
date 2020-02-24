@@ -1,13 +1,86 @@
 # 动态规划
-我们如何判断一道题是不是该用DP？
-动态规划大体上分两种：
-1. top down。通常我们还说，top down with memorization。其实这是一种自上而下，记住遍历过的值的递归算法。
-2. bottom up。有些书上说，这个才是真正意义上递归。又叫bottom up with tablutation. 
+
+来看一个例子：
+The rod-cutting problem（分杆问题）是动态规划问题的一个典例。
+
+给出一根长度为n（n为整数）的杆，可以将杆切割为任意份长短不同的杆（其中包含完全不进行切割的情况），每一份的长度都为整数。给出一个整数数组nums，nums[i]表示长度为i的杆的价格，问如何对杆进行切割可以使利润最大。
+数组的一个示例如下：
+
+在长度为n的杆上进行整数切割，共有2n-1种情况，因为有n-1个点可以选择是否切割。
+将这些可以切割的点编号为1,2,3, ..., n-1，如果先试着在1处切割，则杆变成了长度为1和n-1的两段；如果试着在2处切割，则杆变为了长度为2和n-2的两段，以此类推，共有n种切法（包含完全不作切割）。这样，我们迈出了递归的第一步，即把长为n的杆的最优切割分成两个子问题：长为i的杆的最优切割和长为n-i的杆的最优切割（i = 1,2,...,n）。最终的利润为两个子杆的利润和。
+如果用fn表示长度为n的杆切割后能得到的最大利润，经过以上分析，我们求取两个子杆的利润和的最大值即可。即
+fn = max(pn, f1 + fn-1, f2 + fn-2, ..., fn-1 + f1).
+这种思路是正确的，但不是太好，有心人可以注意到子问题之间有较大的重叠之处，比如计算fn-1时会需要查看f1 + fn-2，即f1 + fn-1这个子问题需要查看f1 + f1 + fn-2这个切法；而计算f2时又需要查看f1 + f1，即f2 + fn-2这个子问题也会查看到f1 + f1 + fn-2这个切法，相当于把一些可能性重复查看了多遍。
+一个更简洁合理的思路是：设定左边这个长为ｉ的杆不可再切割，只有右边长为n-i的杆可以再切割。则问题变为
+fn = max(pi + fn-i), i = 1,2,...,n
+这题用递归就能解
+```
+def cutroad(n, nums):
+    if n == 0:
+        return 0
+    res = 0
+    for i in range(1, n+1):
+        res = max(res, nums[i]+cutroad(n-i, nums))
+    return res
+```
+时间复杂度则为O(2^n)
+在节点n，算法的时间复杂度为
+Tn = 1 + ∑ Ti (i = 0,1, ..., n-1)
+(其中的1是在节点处做加法和max运算的常数复杂度)
+这个式子很好推算，只要将Ti的值以此从后往前代入即可：
+
+Tn = 1+T0+T1+ ... +Tn-1 　　　　 　 = 1+T0+T1+ ... +Tn-2+(1+T0+T1+ ... +Tn-2)
+
+　　 = 2 (1+T0+T1+ ... +Tn-2)　 　=  2 (1+T0+T1+ ... +Tn-3+(1+T0+T1+ ... +Tn-3))
+
+　　 = 22 (1+T0+T1+ ... +Tn-3)　  =  ... （总结规律） = 2n-1 (1 + T0)
+
+　　 = 2n
+
+即传统递归算法的时间复杂度为O(2^n)，为指数级别。
+优化
+以n = 4为例，画出递归树结构（节点包含的数字为n的值）
 
 
-总结了一下dynamic programming的formula:
-如何写出通用表达式呢：
-可以这么做拿到题，比如
+## top-down with memoization
+top-down方法比较容易理解，就是在传统递归的基础上加入memoization（注意与memorization的区别。memoization来自memo，有备忘的意思），即用数组或表等结构缓存计算结果。在每次递归运算时，先判断想要的结果是否在缓存中，如果没有才进行运算并存入缓存。
+```
+class Solution:
+    def cutroad(self, n, nums):
+        self.dp = [-1]*(len(nums)+1)
+        self.dp[0] = 0
+        self.run(n, nums, self.dp)
+        print(self.dp)
+        return self.dp[n]
+        
+    def run(self, n, nums, dp):
+        if dp[n] != -1:
+            return dp[n]
+        if n == 0:
+            return 0 
+        res = 0
+        for i in range(1, len(nums)+1):
+            res = max(res, nums[i]+self.run(n-i, nums, self.dp))
+        self.dp[n] = res
+        return res
+```
+## bottom up with tablutationn
+bottom-up with tabulation
+相比于top-down，bottom-up的特点是使用循环而非递归，先解决子问题，再利用子问题的答案解决父问题。tabulation也很好理解，即用一个表格存放子问题的答案，然后查表获得父问题需要的所有信息去解决父问题，解决后也填在表中，直至把表填满。
+
+事实上，dynamic programming这个令人费解的名字即来源于此。programming在数学界有“列表法”(tabular method)的意思，指的是为了求某函数的最大/最小值，将函数的所有变量的所有可能值列在表中并对表进行某些操作来获得结果。在这里，表格是“静态”的，每个格子中的信息是独立的；而在动态规划中，表格是“动态”的，一些格子中的信息依赖于另一些格子中的计算答案。所以，dynamic programming也可以理解为“动态列表法”，也即此处的tabulation。有些书上说，这个才是真正意义上递归。
+
+动态规划是一种“以空间换时间”的思想，适用于子问题之间存在重叠情况的优化问题。它的基本思想是将计算过的子问题的答案记录下来，从而达到每个子问题只计算一次的目的。
+
+动态规划的实现方法分为top-down和bottom-up两种，可以理解为前者从递归树的根节点向下递归调用，而后者从树的叶结点开始不停地向上循环。
+
+所以呢？
+总结就一句话，dyanmic programming里面，用recursive方法的，就是top down，用iterative方法做的，就是bottom up。
+最后，其实上述例子一直是有问题的，当n > len(nums)，就报错了。也不知道为何书上都喜欢用这个例子。
+
+
+# 模板
+## 二维数组系列
 Edit Distance这道题：
 这种类型的题，建立的matrix一定是 (m+1)(n+1)大小的：
 
@@ -153,7 +226,7 @@ if dp[i][j] < 1:
 ```
 
 
-Palindrome 系列：
+## Palindrome 系列：
 1143. Longest Common Subsequence
 这道题是这系列里三个题最基本的：就是找两个string的共同子序列
 还是按照模板，通解的formula也非常简单
@@ -183,7 +256,7 @@ return dp[-1][-1]
 同理，这道题的程序和接待也与1143一模一样了。
 
 
-Array 连续累加问题： （特别需要注意这类题型的写法）
+## Array 连续累加问题： （特别需要注意这类题型的写法）
 Leetcode 560
 Leetcode 974
 leetcode 325
