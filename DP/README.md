@@ -42,7 +42,8 @@ Tn = 1+T0+T1+ ... +Tn-1 　　　　 　 = 1+T0+T1+ ... +Tn-2+(1+T0+T1+ ... +Tn-
 即传统递归算法的时间复杂度为O(2^n)，为指数级别。
 优化
 以n = 4为例，画出递归树结构（节点包含的数字为n的值）
-![recursion_tree]https://github.com/XunOuyang/LeetCode/blob/master/DP/image/recursion_tree.png
+
+![recursion_tree](https://github.com/XunOuyang/LeetCode/blob/master/DP/image/recursion_tree.png)
 
 ## top-down with memoization
 top-down方法比较容易理解，就是在传统递归的基础上加入memoization（注意与memorization的区别。memoization来自memo，有备忘的意思），即用数组或表等结构缓存计算结果。在每次递归运算时，先判断想要的结果是否在缓存中，如果没有才进行运算并存入缓存。
