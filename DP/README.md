@@ -268,3 +268,9 @@ Leetcode 1074
 Leetcode 363
 Are follow-ups, basically they extend this problem from 1 dimension to 2 dimension.
 
+## 两个string字母重复问题：
+1143. Longest Common Subsequence
+1035. Uncrossed Lines
+583. Delete Operation for Two Strings
+712. Minimum ASCII Delete Sum for Two Strings
+718. Maximum Length of Repeated Subarray
