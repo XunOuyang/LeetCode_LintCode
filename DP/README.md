@@ -266,6 +266,7 @@ leetcode 325
 
 Leetcode 1074
 Leetcode 363
+523. Continuous Subarray Sum
 Are follow-ups, basically they extend this problem from 1 dimension to 2 dimension.
 
 ## 两个string字母重复问题：
