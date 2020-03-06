@@ -187,3 +187,7 @@ void Union(int i,int j)
 int count = 0; // the number of independent sets
 ```
 即计算有多少个 parent[i] == i;
+
+
+# Union Find 经典题
+924
