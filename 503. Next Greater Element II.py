@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Aug 16 17:14:02 2018
-
-@author: tzlmyq
+这道题最tricky的地方在于，我们需要用stack记住的是每个数字的index，而不是数字本身。
 """
 
 class Solution(object):
@@ -11,18 +9,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        length = len(nums)
-        res = []
+        res = [-1] * len(nums)
         nums = nums + nums
-        for i in range(len(nums)/2):
-            j = 1
-            while j < len(nums)/2:
-                if nums[j+i] > nums[i]:
-                    res.append(nums[j+i])
-                    break
-                j += 1
-            if j == len(nums)/2:
-                res.append(-1)
+        stack = []
+        for i in range(len(nums)):
+            while stack and nums[stack[-1]] < nums[i]:
+                res[stack.pop()] = nums[i]
+            if i < len(nums)/2:
+                stack.append(i)
         return res
                     
     
