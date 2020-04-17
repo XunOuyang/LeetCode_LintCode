@@ -1,29 +1,33 @@
-class Solution {
-public:
-    vector<int> searchRange(vector<int>& nums, int target) {
-        if(nums.size() == 0 || target < nums[0] || target > nums[nums.size()-1])
-            return {-1, -1};
-        vector<int> res;
-        int left = 0, right = nums.size() - 1, mid;
-        while(left <= right) {
-            mid = left + (right - left) / 2;
-            if(nums[mid] < target)
-                left = mid + 1;
-            else
-                right = mid - 1;
-        }
-        if(nums[left] != target)
-            return {-1, -1};
-        res.push_back(left);
-        left = 0, right = nums.size() - 1;
-        while(left <= right) {
-            mid = left + (right - left) / 2;
-            if(nums[mid] > target)
-                right = mid - 1;
-            else
-                left = mid + 1;
-        }
-        res.push_back(right);
-        return res;
-    }
-};
+"""
+这道题是最最最经典的二分法基本题型。用万能模板能够解决大部分问题。但是依然逃不开corner case。所以做题目还是不能想当然。
+
+"""
+class Solution(object):
+    def searchRange(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        res = [-1, -1]
+        if not nums:
+            return res
+        left, right = -1, len(nums)
+        while left != right -1:
+            mid = (left+right)/2
+            if nums[mid] < target:
+                left = mid
+            else:
+                right = mid
+        if right == len(nums) or nums[right] != target:
+            return res
+        res[0] = right
+        left, right = -1, len(nums)
+        while left != right -1:
+            mid = (left+right)/2
+            if nums[mid] <= target:
+                left = mid
+            else:
+                right = mid
+        res[1] = left
+        return res
