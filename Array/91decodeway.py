@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep 19 10:38:27 2018
-
-@author: TZLMYQ
+这道题考察的是，能不能够把所有的corner case都考虑周全
 """
 
 class Solution(object):
