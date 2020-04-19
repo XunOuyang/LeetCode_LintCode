@@ -109,10 +109,13 @@ T  2   2    3    4    3
 ```
 那么就不难得出通用表达式了：
 ```
-if str1[i] == str2[j]:
-	dp[j+1][i+1] = min(dp[j][i],dp[j][i+1]+1,dp[j+1][i]+1 )
-else:      
-    dp[j+1][i+1] = min(dp[j][i+1]+1, dp[j+1][i]+1, dp[j][i]+2)     
+if word1[i] == word2[j]:
+    dp[i+1][j+1] = dp[i][j]
+else:
+    # dp[i+1][j] -- remove a letter from word2
+    # dp[i][j+1] -- remove a ltter from word1
+    # dp[i][j] -- replace the letter
+    dp[i+1][j+1] = min(dp[i+1][j], dp[i][j+1], dp[i][j]) + 1
 ```
 
 又比如Leetcode 44 wildcard matching：
