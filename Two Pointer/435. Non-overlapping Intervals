@@ -1,0 +1,15 @@
+"""
+The core of  this problem -- figuring out which element is the first to keep ? The one end first !
+"""
+
+class Solution:
+    def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
+        res = 0
+        intervals.sort(reverse=True, key=lambda x:x[1])
+        while intervals:
+            [left, right] = intervals.pop()
+            while intervals and right > intervals[-1][0]:
+                res += 1
+                intervals.pop()
+        return res
+            
