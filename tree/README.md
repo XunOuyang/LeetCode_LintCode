@@ -1,3 +1,7 @@
+## Pre-Order: Root, Left, Right
+## In-Order: Left, Root, Right
+## Post-Order: Left, Right, Root
+
 Python:
 ```
 class TreeNode(object):
