@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jun 26 10:08:36 2018
-
-@author: tzlmyq
+惊讶的发现以前checkin到github里面的答案是错误的。
+这道题用下面的方法很容易理解，但是最容易犯错的是，直接会忽略掉第28行到33行的代码，而这恰恰是关键。
 """
 
 class Solution(object):
@@ -11,22 +10,48 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        stack1 = []
-        stack2 = []
-        for item in s:
-            if item == "(":
-                stack1.append("(")
-            elif item == "*":
-                stack2.append("*")
+        left, star = [], []
+        for i, c in enumerate(s):
+            if c == "(":
+                left.append(i)
+            elif c == "*":
+                star.append(i)
             else:
-                if stack1:
-                    stack1.pop()
-                elif stack2:
-                    stack2.pop()
+                if left:
+                    left.pop()
+                elif star:
+                    star.pop()
                 else:
                     return False
-        return False if len(stack1) > len(stack2) else True
+        if len(left) > len(star):
+            return False
+        while left:
+            if left[-1] > star[-1]:
+                return False
+            else:
+                left.pop()
+                star.pop()
+        return True
     
-solution = Solution()
-s = "(())((())()()(*)(*()(())())())()()((()())((()))(*"
-print solution.checkValidString(s)
+class Solution2:
+    def checkValidString(self, s: str) -> bool:
+        count = 0
+        for c in s:
+            if c == ")":
+                count -= 1
+                if count < 0:
+                    return False
+            else:
+                count += 1
+        if count == 0:
+            return True
+        count = 0
+        for c in s[::-1]:
+            if c == "(":
+                count -= 1
+                if count < 0:
+                    return False
+            else:
+                count += 1
+        return True
+        
