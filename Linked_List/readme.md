@@ -19,7 +19,7 @@ clas LinkedList(object):
         self.tail = Node(0)
         self.head.next = self.tail
         self.tail.pre = self.head
-
+```
 C++ template:
 ```
 struct Node { 
