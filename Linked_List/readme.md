@@ -40,4 +40,4 @@ struct Node {
 #### 反转
 下面看来一下反转的示意图
 
-![List_List_Reverse](dhttps://github.com/XunOuyang/LeetCode/blob/master/Linked_List/image/linked_list_reverse.gif | width=480 height=480)
+![List_List_Reverse](https://github.com/XunOuyang/LeetCode/blob/master/Linked_List/image/linked_list_reverse.gif | width=480 height=480)
