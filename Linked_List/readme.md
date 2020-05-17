@@ -22,7 +22,22 @@ clas LinkedList(object):
 
 C++ template:
 ```
-struct ListNode {
-    int val;
-    ListNode *next;
-};
+struct Node { 
+    int data; 
+    struct Node* next; 
+    Node(int data) 
+    { 
+        this->data = data; 
+        next = NULL; 
+    } 
+}; 
+```
+
+最常见的linked list的操作有两种：
+1. 反转
+2. 找环
+
+#### 反转
+下面看来一下反转的示意图
+![List_List_Reverse](https://github.com/XunOuyang/LeetCode/blob/master/Linked_List/image/linked_list_reverse.jpg)
+
