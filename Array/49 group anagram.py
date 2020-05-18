@@ -11,25 +11,10 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        '''
-        count = 0
-        dic = {}
-        res = []
-        for string in strs:
-            if "".join(sorted(string)) in dic:
-                res[dic["".join(sorted(string))]].append(string)
-            else:
-                dic["".join(sorted(string))] = count
-                res.append([string])
-                count += 1
-        return res
-        '''
-    
         d = dict()
         res = []
         for string in strs:
             temp = "".join(sorted(string))
-    #        print temp
             if temp not in d.keys():
                 d[temp] = [string]
             else:
