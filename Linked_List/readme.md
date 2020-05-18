@@ -32,6 +32,12 @@ struct Node {
     } 
 }; 
 ```
+删除一个node:
+```
+# 假设被删除的node是cur.next
+cur.next = cur.next.next
+```
+
 
 最常见的linked list的操作有两种：
 1. 反转
