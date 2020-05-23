@@ -18,3 +18,10 @@ Different types of problem
 ## Array
 ### continuous subarray
 
+### Python 
+#### collections.counter
+The counter in python can be sorted, it can be sorted by either elements or frequency. 
+```
+for item in sorted(counter.items(), key=lambda item:item[1]):
+  print(item)
+```
