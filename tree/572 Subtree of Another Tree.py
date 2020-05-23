@@ -5,34 +5,34 @@ Created on Wed Apr 11 11:04:08 2018
 @author: tzlmyq
 """
 
-class Solution(object):
+class Solution:
+    """
+    @param s: the s' root
+    @param t: the t' root
+    @return: whether tree t has exactly the same structure and node values with a subtree of s
+    """
     def isSubtree(self, s, t):
-        """
-        :type s: TreeNode
-        :type t: TreeNode
-        :rtype: bool
-        """
-        if not s or not t:
-            return False
+        # Write your code here
         stack = [s]
-        res = False
         while stack:
             node = stack.pop()
-            res = self.check(node, t)
-            if res == True:
-                return res
+            if self.check(node, t):
+                return True
             if node.left:
                 stack.append(node.left)
             if node.right:
                 stack.append(node.right)
-        return res
-    
-    def check(self, node1, node2):
-        if not node1 and not node2:
+        return False
+        
+    def check(self, s, t):
+        if not s and not t:
             return True
-        elif not node1 or not node2:
+        if not s or not t:
             return False
-        return (node1.val == node2.val and self.check(node1.left, node2.left) and self.check(node1.right, node2.right))
+        if s.val == t.val:
+            if self.check(s.left, t.left) and self.check(s.right, t.right):
+                return True
+        return False
         
 """
 这么写肯定是不对的啊！！！
