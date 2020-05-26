@@ -26,6 +26,18 @@ class Solution(object):
     
     """
     
+class Solution2:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        res = [[]]
+        for num in nums:
+            temp = []
+            for item in res:
+                temp.append(item)
+                temp.append(item + [num])
+            res = temp
+        return res
+                
+    
 # C++ 
     
 class Solution {
