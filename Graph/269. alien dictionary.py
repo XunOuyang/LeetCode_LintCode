@@ -1,3 +1,6 @@
+"""
+典型的topological sort的题，不容易的。 
+"""
 import bisect
 import collections
 class Solution:
