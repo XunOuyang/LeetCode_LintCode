@@ -39,3 +39,7 @@ int depth(TreeNode* root) {
         return 0;
     return max(root->left, root->right) + 1;
 ````
+
+## Common Ancester 类型的题目：
+236. Lowest Common Ancestor of a Binary Tree
+1123. Lowest Common Ancestor of Deepest Leaves
