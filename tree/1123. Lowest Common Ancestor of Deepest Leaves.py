@@ -31,3 +31,20 @@ class Solution:
             if len(new_stack) == 1:
                 return new_stack[0]
             stack = new_stack
+
+"""
+Recursion解法
+"""
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        def helper(root):
+            if not root: 
+                return 0, None
+            h1, left = helper(root.left)
+            h2, right = helper(root.right)
+            if h1 > h2: 
+                return h1 + 1, left
+            if h1 < h2: 
+                return h2 + 1, right
+            return h1 + 1, root
+        return helper(root)[1]
