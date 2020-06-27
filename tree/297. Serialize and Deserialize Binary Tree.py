@@ -1,3 +1,5 @@
+# 这道题其实要做到bug free，还挺不容易写的。难点都在哪里呢？首先要明白，serialize过去的值，不是list，而是string。不一定非要跟example里面一模一样的输出，只需要
+# 最后自己deserialize的时候能够还原成一样即可。很容易会想到用deque。
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
