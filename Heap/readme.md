@@ -1,3 +1,16 @@
+# Heap and Stack
+The heap here is different from the heap list below as Heap VS PQ
+Heap -- First In First Out
+Stack -- First In Last Out
+
+Stack is faster than Heap.
+Heap is dynamically allocated which gives the user flexibility on it.
+OS will create stack for OS threads. Heap was created by applications.
+
+
+<img src="image/heap_and_queue.webp" width="400" height="248" />
+
+
 # Heap && Priority Queue
 
 ## Python:
