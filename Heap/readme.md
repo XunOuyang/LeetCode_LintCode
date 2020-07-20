@@ -8,7 +8,7 @@ Heap is dynamically allocated which gives the user flexibility on it.
 OS will create stack for OS threads. Heap was created by applications.
 
 
-<img src="image/heap_and_queue.webp" width="400" height="248" />
+<img src="image/heap_and_queue.webp" />
 
 
 # Heap && Priority Queue
