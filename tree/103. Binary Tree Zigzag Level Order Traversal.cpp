@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+// 千万要注意vector里面是TreeNode* 而不是TreeNode
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
