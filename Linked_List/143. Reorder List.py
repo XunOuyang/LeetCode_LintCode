@@ -6,6 +6,8 @@ class Solution:
         """
         Be careful when reverse a linked list and concatenate two list.
         """
+        if not head:
+            return
         fast = slow = head
         while fast and fast.next:
             fast = fast.next.next
