@@ -12,6 +12,8 @@ class Solution(object):
             4. We know the relationship between i and j:  j = i + length - 1, and we know j <= n which makes j < n+1 which makes i+length - 1 < n+1 which makes i < n + 2 - length
             5. We know the range of k: i<= k <= j
             6. The most difficult part, formular!
+        Similar problem:
+            1457
         """
         n = len(nums)
         nums = [1]+nums+[1]
