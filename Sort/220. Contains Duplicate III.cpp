@@ -1,34 +1,32 @@
+// 这是一道非常不容易的题目，用到了bucket sort的思想。除此以外，还有几个特别值得注意的地方：
+// 1. 需要初始化判断 t 和 k
+// 2. 需要考虑到是否可能溢出，所以需要用long 型
+// 3. 需要考虑如果数字一旦是负数，那么所有的key的值都需要减1.
 class Solution {
 public:
     bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
         if(t < 0 || k < 0)
             return false;
-        unordered_map<long int, long int> m;
-        long int window = long(t) + 1;
-        for(int i=0; i<nums.size(); i++)
+        long window = long(t) + 1;
+        unordered_map<long, long> m;
+        for(int i=0; i < nums.size(); i++)
         {
-            long int temp;
-            if(nums[i] >=0 )
+            long temp;
+            if(nums[i] >= 0)
                 temp = nums[i] / window;
-            else
+            else 
                 temp = nums[i] / window - 1;
-            //cout << temp << endl;
             if(m.count(temp))
                 return true;
             if(m.count(temp - 1) && abs(m[temp-1] - nums[i]) <= t)
-            {
-                //cout << "asdf1" << endl;
                 return true;
-            }
             if(m.count(temp + 1) && abs(m[temp+1] - nums[i]) <= t)
-            {
-                //cout << m[temp+1] << nums[i] << endl;
                 return true;
-            }
-            //m.insert(pair<int, int>(temp, nums[i]));
             m[temp] = nums[i];
-            if(i >= k)
-                m.erase(int(nums[i-k] / window));
+            if(i >= k && nums[i- k] >= 0)
+                m.erase(long(nums[i-k] / window));
+            else if(i >= k && nums[i- k] < 0)
+                m.erase(long(nums[i-k] / window - 1));
         }
         return false;
     }
