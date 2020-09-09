@@ -1,0 +1,31 @@
+这道题虽然是easy 题，但是不论是cpp还是python，其实都不太好写。不好写的点在于，cpp，需要了解istringstream的用法，python需要对map和函数有深刻的理解。
+```
+class Solution {
+public:
+    bool wordPattern(string pattern, string str) {
+        map<char, int> map_p;
+        map<string, int> map_s;
+        int i = 0, n = pattern.size();
+        istringstream in(str);
+        for(string word; in >> word; i++)
+        {
+            if(i == n || map_p[pattern[i]] != map_s[word])
+                return false;
+            map_p[pattern[i]] = map_s[word] = i + 1;
+        }
+        return i == n;
+    }
+};
+```
+
+```
+class Solution(object):
+    def wordPattern(self, pattern, string):
+        """
+        :type pattern: str
+        :type string: str
+        :rtype: bool
+        """
+        return map(pattern.find, pattern) == map(string.split().index, string.split())
+
+```
