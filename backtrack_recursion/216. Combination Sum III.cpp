@@ -1,3 +1,6 @@
+// 这道题有两个重点
+// 1. 确定backtrack的取值范围，是1到10
+// 2. line 17， i > path.back()
 class Solution {
 public:
     vector<vector<int>> res;
