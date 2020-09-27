@@ -6,7 +6,7 @@
 
 ![topological_sort](https://github.com/XunOuyang/LeetCode/blob/master/Graph/image/topological_sort.jpg)
 
-C++ implementation
+C++ implementation // 其实也没有非写成下面的形式不可。也可以用vector等其他数据结构来处理拓扑排序。
 graph is stored by adjacent table
 ```
 #include<iostream>
