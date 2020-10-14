@@ -284,3 +284,8 @@ Are follow-ups, basically they extend this problem from 1 dimension to 2 dimensi
 583. Delete Operation for Two Strings
 712. Minimum ASCII Delete Sum for Two Strings
 718. Maximum Length of Repeated Subarray
+
+## burst balloons.
+1039. Minimum Score Triangulation of Polygon
+1547. Minimum Cost to Cut a Stick
+
