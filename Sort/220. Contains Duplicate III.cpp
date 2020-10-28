@@ -2,6 +2,7 @@
 // 1. 需要初始化判断 t 和 k
 // 2. 需要考虑到是否可能溢出，所以需要用long 型
 // 3. 需要考虑如果数字一旦是负数，那么所有的key的值都需要减1.
+// 4. 其实也可以在m[temp] 里面存储i。
 class Solution {
 public:
     bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
