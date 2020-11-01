@@ -1,9 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed May 09 22:47:34 2018
-
-@author: tzlmyq
-"""
+# 这道题dp 初始化的时候不能赋值为1，因为我们需要利用这个0，来验证是否该点已经被遍历过了。
+# 同时，我们也需要特别注意在dfs 里面，dp 的写法
+#更加重要的是，写dfs的时候，都需要提前想好，这个dfs的返回值是什么。这道题算是非常好想的了。
 
 class Solution(object):
     def longestIncreasingPath(self, matrix):
@@ -14,7 +11,7 @@ class Solution(object):
         if matrix == [] or matrix == [[]]:
             return 0
         m, n = len(matrix), len(matrix[0])
-        dp = [[0 for _ in range(n)] for _ in range(m)]
+        dp = [[0 for i in range(n)] for j in range(m)]
         res = 0
         
         def dfs(i ,j):
