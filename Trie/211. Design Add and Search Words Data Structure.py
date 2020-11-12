@@ -1,14 +1,16 @@
-class TrieNode:
+class TrieNode():
     def __init__(self):
         self.end = False
         self.children = collections.defaultdict(TrieNode)
-
+        
 class WordDictionary:
+
     def __init__(self):
         """
         Initialize your data structure here.
         """
-        self.root = TrieNode()        
+        self.root = TrieNode()
+        
 
     def addWord(self, word: str) -> None:
         """
@@ -24,21 +26,19 @@ class WordDictionary:
         """
         Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.
         """
-        self.res = False
-        self.dfs(word, self.root)
-        return self.res
+        return self.dfs(word, self.root, 0)
     
-    def dfs(self, word, node):
-        if not word and node.end:
-            self.res = True
-            return
-        elif not word:
-            return
-        if word[0] != ".":
-            node = node.children[word[0]]
-            if not node:
-                return
-            self.dfs(word[1:], node)
+    
+    def dfs(self, word, node, i):
+        if i == len(word):
+            return node.end
+        if word[i] == '.':
+            for item in node.children:
+                if self.dfs(word, node.children[item], i + 1):
+                    return True
+        elif word[i] in node.children:
+            node = node.children[word[i]]
+            return self.dfs(word, node, i + 1)
         else:
-            for n in node.children.values():
-                self.dfs(word[1:], n)
+            return False
+        
