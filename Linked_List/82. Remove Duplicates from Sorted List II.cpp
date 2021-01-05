@@ -28,3 +28,34 @@ public:
         return Dummy->next;
     }
 };
+
+class Solution1 {
+public:
+    ListNode* deleteDuplicates(ListNode* head) {
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+        ListNode* pre = dummy;
+        ListNode* cur = head;
+        bool flag = false;
+        while(cur && cur->next)
+        {
+            while(cur->next && cur->val == cur->next->val)
+            {
+                flag = true;
+                cur->next = cur->next->next;
+            }
+            if(flag)
+            {
+                flag = false;
+                pre->next = cur->next;
+                cur = pre->next;
+            }
+            else
+            {
+                cur = cur->next;
+                pre = pre->next;
+            }
+        }
+        return dummy->next;
+    }
+};
