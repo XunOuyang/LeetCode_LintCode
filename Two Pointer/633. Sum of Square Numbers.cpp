@@ -1,3 +1,4 @@
+// 用C++做题一定要小心是不是可能会out of range
 class Solution {
 public:
     bool judgeSquareSum(int c) {
