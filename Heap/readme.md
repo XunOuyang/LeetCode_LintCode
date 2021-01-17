@@ -107,3 +107,18 @@ int main ()
     return 0; 
 }  
 ```
+
+### max_heap -- priority_queue
+```
+vector<int> nums;
+priority_queue<int> pq(nums.begin(), nums.end());
+```
+### min_heap -- priroity_queue
+```
+vector<int> nums;
+priority_queue<int, vector<int>, greater<int>> pq;
+for(auto& num:nums)
+{
+    pq.push(num);
+}
+```
