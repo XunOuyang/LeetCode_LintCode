@@ -15,3 +15,6 @@ while(left != right - 1)
         right = mid;
 }
 ```
+
+经典二分法的题目：
+[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
