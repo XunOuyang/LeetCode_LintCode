@@ -47,3 +47,36 @@ public:
         return res;        
     }
 };
+
+// feels like solution2 is simpler
+class Solution2 {
+public:
+    map<int, map<int, multiset<int>>> m;
+    vector<vector<int>> verticalTraversal(TreeNode* root) {
+        traverse(root, 0, 0);
+        vector<vector<int>> res;
+        for(auto& item:m)
+        {
+            vector<int> temp;
+            for(auto& sm:item.second)
+            {
+                for(auto& num:sm.second)
+                    temp.push_back(num);
+            }
+            res.push_back(temp);
+        }
+        return res;
+    }
+    
+    void traverse(TreeNode* root, int depth, int x)
+    {
+        if(root)
+        {
+            m[x][depth].insert(root->val);
+            if(root->left)
+                traverse(root->left, depth + 1, x - 1);
+            if(root->right)
+                traverse(root->right, depth + 1, x + 1);
+        }
+    }
+};
