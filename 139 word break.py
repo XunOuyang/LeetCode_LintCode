@@ -22,13 +22,15 @@ class Solution(object):
             
         
         
-        
-solution = Solution()
-"""
-s = "catsandog"
-wordDict = ["dog",  "and", "cats"]
-"""
-s= "leetcode"
-wordDict = ["leet", "code"]
+def test_wordBreak():
+    solution = Solution()
+    
+    strings = ["catsandog", "leetcode"]
+    wordDicts = [["dog",  "and", "cats"], ["leet", "code"]]
+    answers = [False, True]
+    for i in range(len(strings)):
+        assert solution.wordBreak(strings[i], wordDicts[i]) == answers[i], "Failed at Test case " + str(i + 1)
 
-print solution.wordBreak(s, wordDict)
+if __name__ == "__main__":
+    test_wordBreak()
+    print("Pass")
