@@ -18,7 +18,8 @@ public:
     }
 };
 
-
+// using bit. 
+// pay attention to the bit operation coding part.
 class Solution2 {
 public:
     int findDuplicate(vector<int>& nums) {
@@ -44,5 +45,27 @@ public:
             }
         }
         return ret;
+    }
+};
+
+// using binary search. we supposed to have n numbers smaller or equal to n.
+class Solution3 {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int left = 0, right = nums.size() + 1;
+        while(left != right - 1)
+        {
+            int mid = (right + left) / 2;
+            int count = 0;
+            for(int num:nums){
+                if(num <= mid)
+                    count += 1;
+            }
+            if(count > mid)
+                right = mid;
+            else
+                left = mid;
+        }
+        return right;
     }
 };
